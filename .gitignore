@@ -50,6 +50,7 @@ coverage.xml
 .hypothesis/
 .pytest_cache/
 cover/
+examples/
 
 # Translations
 *.mo
@@ -77,6 +78,7 @@ target/
 
 # Jupyter Notebook
 .ipynb_checkpoints
+checkpoints/*
 
 # IPython
 profile_default/
@@ -139,3 +141,19 @@ cython_debug/
 
 # vim
 *.swp
+
+
+*.pdb
+*.sdf
+*.dat
+*.bak
+*.hint
+*.csv
+*.dir
+*.txt
+*.ckpt
+*.yaml
+*.out
+*.err
+*.save
+*.png
