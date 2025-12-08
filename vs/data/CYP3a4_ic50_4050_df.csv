@@ -1,0 +1,12 @@
+pValue,ligand,data
+5,OC1N=C(c2ccccc2F)c2cc(Cl)ccc2-n2cncc21,CYP3a4_ic50
+5.87,NC(=O)c1cccc2[nH]c3c(N4CCN(CCc5ccc(F)c(F)c5)CC4)ncnc3c12,CYP3a4_ic50
+5,C[C@]12CC[C@H]3[C@@H](CCC4=CC(=O)CC[C@@]43C)[C@@H]1CC[C@@H]2O,CYP3a4_ic50
+5.03,Cn1c2ccnc(Cl)c2c2ncnc(N3CCN(CCc4ccc(F)c(F)c4)CC3)c21,CYP3a4_ic50
+4.37,O=[N+]([O-])c1cc([N+](=O)[O-])c2[nH]c3c(N4CCN(CCc5ccc(F)c(F)c5)CC4)nc(CN4CCOCC4)nc3c2c1,CYP3a4_ic50
+4.9,O=[N+]([O-])c1ccc2[nH]c3c(N4CCN(CCc5ccc(F)c(F)c5)CC4)ncnc3c2c1,CYP3a4_ic50
+6.58,Cn1c2cccc(C(N)=O)c2c2ncnc(N3CCN(CCc4ccc(F)c(F)c4)CC3)c21,CYP3a4_ic50
+4.82,CCOC(=O)Cn1c2ccc([N+](=O)[O-])cc2c2ncnc(N3CCN(CCc4ccc(F)c(F)c4)CC3)c21,CYP3a4_ic50
+4.7,Cn1c2ccnc(Cl)c2c2nc(CN3CCOCC3)nc(N3CCN(CCc4ccc(F)c(F)c4)CC3)c21,CYP3a4_ic50
+4.68,Cn1c2ccnc(N3CCOCC3)c2c2ncnc(N3CCN(CCc4ccc(F)c(F)c4)CC3)c21,CYP3a4_ic50
+5.91,Cn1c2nccc(C(N)=O)c2c2ncnc(N3CCN(CCc4ccc(F)c(F)c4)CC3)c21,CYP3a4_ic50
