@@ -1,0 +1,100 @@
+2026-01-16 14:55:02,532 - INFO - >>> STEP: Подготовка глобальных ресурсов...
+2026-01-16 14:55:07,160 - INFO - Запуск prepare_ligands_new.py...
+--- Starting flexible ligand preparation script (AUTO-DELIMITER) ---
+Detected separator: ','
+Processing 11 ligands...
+Preparation complete. Success: 11, Failed/Filtered: 0
+2026-01-16 14:55:08,745 - INFO - Обработка ошибок подготовки (0 лигандов)...
+2026-01-16 14:55:08,748 - INFO - Начало докинга для 11 успешных лигандов...
+2026-01-16 14:55:08,748 - INFO - [ligand_row_0] Processing in temp_isolation_work/L001...
+2026-01-16 14:55:08,748 - INFO - [ligand_row_0] >>> Start Stage: Setup
+2026-01-16 14:55:08,758 - INFO - [ligand_row_0] >>> Start Stage: Energy Prediction
+2026-01-16 14:55:23,835 - INFO - [ligand_row_0] >>> Start Stage: Pocket Restore
+2026-01-16 14:55:23,840 - INFO - [ligand_row_0] >>> Start Stage: Reconstruction
+2026-01-16 14:55:39,839 - INFO - [ligand_row_0] >>> Start Stage: Scoring
+2026-01-16 14:55:58,752 - INFO - [ligand_row_0] >>> Start Stage: Collection
+2026-01-16 14:55:58,780 - INFO - [ligand_row_0] SUCCESS. Time: 50.03s
+2026-01-16 14:55:58,802 - INFO - [ligand_row_1] Processing in temp_isolation_work/L002...
+2026-01-16 14:55:58,802 - INFO - [ligand_row_1] >>> Start Stage: Setup
+2026-01-16 14:55:58,813 - INFO - [ligand_row_1] >>> Start Stage: Energy Prediction
+2026-01-16 14:56:05,985 - INFO - [ligand_row_1] >>> Start Stage: Pocket Restore
+2026-01-16 14:56:05,989 - INFO - [ligand_row_1] >>> Start Stage: Reconstruction
+2026-01-16 14:56:27,930 - INFO - [ligand_row_1] >>> Start Stage: Scoring
+2026-01-16 14:56:46,303 - INFO - [ligand_row_1] >>> Start Stage: Collection
+2026-01-16 14:56:46,314 - INFO - [ligand_row_1] SUCCESS. Time: 47.51s
+2026-01-16 14:56:46,335 - INFO - [ligand_row_2] Processing in temp_isolation_work/L003...
+2026-01-16 14:56:46,335 - INFO - [ligand_row_2] >>> Start Stage: Setup
+2026-01-16 14:56:46,345 - INFO - [ligand_row_2] >>> Start Stage: Energy Prediction
+2026-01-16 14:56:53,204 - INFO - [ligand_row_2] >>> Start Stage: Pocket Restore
+2026-01-16 14:56:53,208 - INFO - [ligand_row_2] >>> Start Stage: Reconstruction
+2026-01-16 14:57:08,186 - INFO - [ligand_row_2] >>> Start Stage: Scoring
+2026-01-16 14:57:25,918 - INFO - [ligand_row_2] >>> Start Stage: Collection
+2026-01-16 14:57:25,930 - INFO - [ligand_row_2] SUCCESS. Time: 39.59s
+2026-01-16 14:57:25,951 - INFO - [ligand_row_3] Processing in temp_isolation_work/L004...
+2026-01-16 14:57:25,951 - INFO - [ligand_row_3] >>> Start Stage: Setup
+2026-01-16 14:57:25,961 - INFO - [ligand_row_3] >>> Start Stage: Energy Prediction
+2026-01-16 14:57:32,955 - INFO - [ligand_row_3] >>> Start Stage: Pocket Restore
+2026-01-16 14:57:32,959 - INFO - [ligand_row_3] >>> Start Stage: Reconstruction
+2026-01-16 14:57:54,053 - INFO - [ligand_row_3] >>> Start Stage: Scoring
+2026-01-16 14:58:13,202 - INFO - [ligand_row_3] >>> Start Stage: Collection
+2026-01-16 14:58:13,214 - INFO - [ligand_row_3] SUCCESS. Time: 47.26s
+2026-01-16 14:58:13,235 - INFO - [ligand_row_4] Processing in temp_isolation_work/L005...
+2026-01-16 14:58:13,235 - INFO - [ligand_row_4] >>> Start Stage: Setup
+2026-01-16 14:58:13,245 - INFO - [ligand_row_4] >>> Start Stage: Energy Prediction
+2026-01-16 14:58:21,017 - INFO - [ligand_row_4] >>> Start Stage: Pocket Restore
+2026-01-16 14:58:21,021 - INFO - [ligand_row_4] >>> Start Stage: Reconstruction
+2026-01-16 14:58:53,387 - INFO - [ligand_row_4] >>> Start Stage: Scoring
+2026-01-16 14:59:13,640 - INFO - [ligand_row_4] >>> Start Stage: Collection
+2026-01-16 14:59:13,651 - INFO - [ligand_row_4] SUCCESS. Time: 60.42s
+2026-01-16 14:59:13,672 - INFO - [ligand_row_5] Processing in temp_isolation_work/L006...
+2026-01-16 14:59:13,672 - INFO - [ligand_row_5] >>> Start Stage: Setup
+2026-01-16 14:59:13,683 - INFO - [ligand_row_5] >>> Start Stage: Energy Prediction
+2026-01-16 14:59:22,159 - INFO - [ligand_row_5] >>> Start Stage: Pocket Restore
+2026-01-16 14:59:22,163 - INFO - [ligand_row_5] >>> Start Stage: Reconstruction
+2026-01-16 14:59:43,976 - INFO - [ligand_row_5] >>> Start Stage: Scoring
+2026-01-16 15:00:03,394 - INFO - [ligand_row_5] >>> Start Stage: Collection
+2026-01-16 15:00:03,405 - INFO - [ligand_row_5] SUCCESS. Time: 49.73s
+2026-01-16 15:00:03,425 - INFO - [ligand_row_6] Processing in temp_isolation_work/L007...
+2026-01-16 15:00:03,425 - INFO - [ligand_row_6] >>> Start Stage: Setup
+2026-01-16 15:00:03,435 - INFO - [ligand_row_6] >>> Start Stage: Energy Prediction
+2026-01-16 15:00:11,508 - INFO - [ligand_row_6] >>> Start Stage: Pocket Restore
+2026-01-16 15:00:11,512 - INFO - [ligand_row_6] >>> Start Stage: Reconstruction
+2026-01-16 15:00:33,845 - INFO - [ligand_row_6] >>> Start Stage: Scoring
+2026-01-16 15:00:51,986 - INFO - [ligand_row_6] >>> Start Stage: Collection
+2026-01-16 15:00:51,997 - INFO - [ligand_row_6] SUCCESS. Time: 48.57s
+2026-01-16 15:00:52,018 - INFO - [ligand_row_7] Processing in temp_isolation_work/L008...
+2026-01-16 15:00:52,018 - INFO - [ligand_row_7] >>> Start Stage: Setup
+2026-01-16 15:00:52,029 - INFO - [ligand_row_7] >>> Start Stage: Energy Prediction
+2026-01-16 15:01:00,308 - INFO - [ligand_row_7] >>> Start Stage: Pocket Restore
+2026-01-16 15:01:00,312 - INFO - [ligand_row_7] >>> Start Stage: Reconstruction
+2026-01-16 15:01:25,655 - INFO - [ligand_row_7] >>> Start Stage: Scoring
+2026-01-16 15:01:43,990 - INFO - [ligand_row_7] >>> Start Stage: Collection
+2026-01-16 15:01:44,002 - INFO - [ligand_row_7] SUCCESS. Time: 51.98s
+2026-01-16 15:01:44,024 - INFO - [ligand_row_8] Processing in temp_isolation_work/L009...
+2026-01-16 15:01:44,024 - INFO - [ligand_row_8] >>> Start Stage: Setup
+2026-01-16 15:01:44,034 - INFO - [ligand_row_8] >>> Start Stage: Energy Prediction
+2026-01-16 15:01:51,815 - INFO - [ligand_row_8] >>> Start Stage: Pocket Restore
+2026-01-16 15:01:51,819 - INFO - [ligand_row_8] >>> Start Stage: Reconstruction
+2026-01-16 15:02:16,055 - INFO - [ligand_row_8] >>> Start Stage: Scoring
+2026-01-16 15:02:35,597 - INFO - [ligand_row_8] >>> Start Stage: Collection
+2026-01-16 15:02:35,611 - INFO - [ligand_row_8] SUCCESS. Time: 51.59s
+2026-01-16 15:02:35,632 - INFO - [ligand_row_9] Processing in temp_isolation_work/L010...
+2026-01-16 15:02:35,632 - INFO - [ligand_row_9] >>> Start Stage: Setup
+2026-01-16 15:02:35,644 - INFO - [ligand_row_9] >>> Start Stage: Energy Prediction
+2026-01-16 15:02:42,805 - INFO - [ligand_row_9] >>> Start Stage: Pocket Restore
+2026-01-16 15:02:42,810 - INFO - [ligand_row_9] >>> Start Stage: Reconstruction
+2026-01-16 15:03:06,434 - INFO - [ligand_row_9] >>> Start Stage: Scoring
+2026-01-16 15:03:25,664 - INFO - [ligand_row_9] >>> Start Stage: Collection
+2026-01-16 15:03:25,677 - INFO - [ligand_row_9] SUCCESS. Time: 50.04s
+2026-01-16 15:03:25,699 - INFO - [ligand_row_10] Processing in temp_isolation_work/L011...
+2026-01-16 15:03:25,699 - INFO - [ligand_row_10] >>> Start Stage: Setup
+2026-01-16 15:03:25,710 - INFO - [ligand_row_10] >>> Start Stage: Energy Prediction
+2026-01-16 15:03:32,673 - INFO - [ligand_row_10] >>> Start Stage: Pocket Restore
+2026-01-16 15:03:32,679 - INFO - [ligand_row_10] >>> Start Stage: Reconstruction
+2026-01-16 15:03:55,705 - INFO - [ligand_row_10] >>> Start Stage: Scoring
+2026-01-16 15:04:15,156 - INFO - [ligand_row_10] >>> Start Stage: Collection
+2026-01-16 15:04:15,166 - INFO - [ligand_row_10] SUCCESS. Time: 49.47s
+2026-01-16 15:04:15,187 - INFO - Сборка финальных файлов результатов...
+2026-01-16 15:04:15,187 - INFO - Сборка финального CSV...
+2026-01-16 15:04:15,208 - INFO - Сборка финального SDF...
+2026-01-16 15:05:11,283 - INFO - ПАЙПЛАЙН ЗАВЕРШЁН. Полный отчет: results/pipeline_summary_report_1tqn.csv

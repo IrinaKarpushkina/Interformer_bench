@@ -1,0 +1,1351 @@
+ERROR: PDB -p not found in PROTEINS list. Skipping.
+Processing 4f65 with ligand FGFR1_Ki_WT_ChEMBL_134_nodubl.csv, ref 0S9, chain A
+2026-01-16 15:48:38,351 - INFO - Copied UFF SDF: vs/uff/4f65_uff.sdf → vs/raw_4f65/4f65_uff.sdf
+2026-01-16 15:48:38,351 - INFO - >>> STEP: Подготовка глобальных ресурсов...
+2026-01-16 15:48:42,234 - INFO - Запуск prepare_ligands_new.py...
+--- Starting flexible ligand preparation script (AUTO-DELIMITER) ---
+Detected separator: ';'
+Auto-selected SMILES column: canonical_smiles
+Processing 134 ligands...
+Preparation complete. Success: 134, Failed/Filtered: 0
+2026-01-16 15:49:10,713 - INFO - Loading molecules from UFF SDF...
+2026-01-16 15:49:10,714 - INFO - Mol 0: name='CHEMBL4068509', atoms=38
+2026-01-16 15:49:10,715 - INFO - Mol 1: name='CHEMBL4446835', atoms=33
+2026-01-16 15:49:10,715 - INFO - Mol 2: name='CHEMBL189584', atoms=38
+2026-01-16 15:49:10,716 - INFO - Mol 3: name='CHEMBL189584', atoms=38
+2026-01-16 15:49:10,716 - INFO - Mol 4: name='CHEMBL5751745', atoms=43
+2026-01-16 15:49:10,717 - INFO - Mol 5: name='CHEMBL5953091', atoms=43
+2026-01-16 15:49:10,717 - INFO - Mol 6: name='CHEMBL5945261', atoms=41
+2026-01-16 15:49:10,718 - INFO - Mol 7: name='CHEMBL5759219', atoms=42
+2026-01-16 15:49:10,718 - INFO - Mol 8: name='CHEMBL6024653', atoms=47
+2026-01-16 15:49:10,719 - INFO - Mol 9: name='CHEMBL5979151', atoms=46
+2026-01-16 15:49:10,719 - INFO - Mol 10: name='CHEMBL5752345', atoms=46
+2026-01-16 15:49:10,720 - INFO - Mol 11: name='CHEMBL5841760', atoms=45
+2026-01-16 15:49:10,720 - INFO - Mol 12: name='CHEMBL6030373', atoms=19
+2026-01-16 15:49:10,721 - INFO - Mol 13: name='CHEMBL5779248', atoms=42
+2026-01-16 15:49:10,721 - INFO - Mol 14: name='CHEMBL5960246', atoms=41
+2026-01-16 15:49:10,722 - INFO - Mol 15: name='CHEMBL5826243', atoms=44
+2026-01-16 15:49:10,722 - INFO - Mol 16: name='CHEMBL5900483', atoms=43
+2026-01-16 15:49:10,723 - INFO - Mol 17: name='CHEMBL6006379', atoms=44
+2026-01-16 15:49:10,723 - INFO - Mol 18: name='CHEMBL5934811', atoms=45
+2026-01-16 15:49:10,724 - INFO - Mol 19: name='CHEMBL5963316', atoms=42
+2026-01-16 15:49:10,724 - INFO - Mol 20: name='CHEMBL5854515', atoms=43
+2026-01-16 15:49:10,725 - INFO - Mol 21: name='CHEMBL6062938', atoms=43
+2026-01-16 15:49:10,725 - INFO - Mol 22: name='CHEMBL6046549', atoms=43
+2026-01-16 15:49:10,726 - INFO - Mol 23: name='CHEMBL6051668', atoms=40
+2026-01-16 15:49:10,726 - INFO - Mol 24: name='CHEMBL5858912', atoms=40
+2026-01-16 15:49:10,727 - INFO - Mol 25: name='CHEMBL5740416', atoms=42
+2026-01-16 15:49:10,727 - INFO - Mol 26: name='CHEMBL5753399', atoms=41
+2026-01-16 15:49:10,728 - INFO - Mol 27: name='CHEMBL6059845', atoms=44
+2026-01-16 15:49:10,728 - INFO - Mol 28: name='CHEMBL6051368', atoms=45
+2026-01-16 15:49:10,729 - INFO - Mol 29: name='CHEMBL5796144', atoms=46
+2026-01-16 15:49:10,729 - INFO - Mol 30: name='CHEMBL5821394', atoms=43
+2026-01-16 15:49:10,730 - INFO - Mol 31: name='CHEMBL5853674', atoms=44
+2026-01-16 15:49:10,730 - INFO - Mol 32: name='CHEMBL5947799', atoms=45
+2026-01-16 15:49:10,731 - INFO - Mol 33: name='CHEMBL5973328', atoms=45
+2026-01-16 15:49:10,731 - INFO - Mol 34: name='CHEMBL6009160', atoms=44
+2026-01-16 15:49:10,732 - INFO - Mol 35: name='CHEMBL5927685', atoms=41
+2026-01-16 15:49:10,732 - INFO - Mol 36: name='CHEMBL6008313', atoms=38
+2026-01-16 15:49:10,733 - INFO - Mol 37: name='CHEMBL5794260', atoms=44
+2026-01-16 15:49:10,733 - INFO - Mol 38: name='CHEMBL5929091', atoms=48
+2026-01-16 15:49:10,734 - INFO - Mol 39: name='CHEMBL6026951', atoms=40
+2026-01-16 15:49:10,734 - INFO - Mol 40: name='CHEMBL5907596', atoms=42
+2026-01-16 15:49:10,735 - INFO - Mol 41: name='CHEMBL5915626', atoms=39
+2026-01-16 15:49:10,735 - INFO - Mol 42: name='CHEMBL5770010', atoms=41
+2026-01-16 15:49:10,736 - INFO - Mol 43: name='CHEMBL5782903', atoms=42
+2026-01-16 15:49:10,736 - INFO - Mol 44: name='CHEMBL5785162', atoms=44
+2026-01-16 15:49:10,737 - INFO - Mol 45: name='CHEMBL5771017', atoms=40
+2026-01-16 15:49:10,737 - INFO - Mol 46: name='CHEMBL5880580', atoms=42
+2026-01-16 15:49:10,738 - INFO - Mol 47: name='CHEMBL6028974', atoms=40
+2026-01-16 15:49:10,738 - INFO - Mol 48: name='CHEMBL5897053', atoms=42
+2026-01-16 15:49:10,739 - INFO - Mol 49: name='CHEMBL5983117', atoms=43
+2026-01-16 15:49:10,739 - INFO - Mol 50: name='CHEMBL5967591', atoms=38
+2026-01-16 15:49:10,740 - INFO - Mol 51: name='CHEMBL6018088', atoms=42
+2026-01-16 15:49:10,740 - INFO - Mol 52: name='CHEMBL5950967', atoms=41
+2026-01-16 15:49:10,741 - INFO - Mol 53: name='CHEMBL5780945', atoms=37
+2026-01-16 15:49:10,741 - INFO - Mol 54: name='CHEMBL5824959', atoms=39
+2026-01-16 15:49:10,742 - INFO - Mol 55: name='CHEMBL5920854', atoms=42
+2026-01-16 15:49:10,742 - INFO - Mol 56: name='CHEMBL5742315', atoms=42
+2026-01-16 15:49:10,743 - INFO - Mol 57: name='CHEMBL6056846', atoms=41
+2026-01-16 15:49:10,743 - INFO - Mol 58: name='CHEMBL5770439', atoms=43
+2026-01-16 15:49:10,744 - INFO - Mol 59: name='CHEMBL6011659', atoms=41
+2026-01-16 15:49:10,744 - INFO - Mol 60: name='CHEMBL5950008', atoms=44
+2026-01-16 15:49:10,745 - INFO - Mol 61: name='CHEMBL6033462', atoms=42
+2026-01-16 15:49:10,745 - INFO - Mol 62: name='CHEMBL5901005', atoms=42
+2026-01-16 15:49:10,746 - INFO - Mol 63: name='CHEMBL5969055', atoms=43
+2026-01-16 15:49:10,746 - INFO - Mol 64: name='CHEMBL6058213', atoms=41
+2026-01-16 15:49:10,747 - INFO - Mol 65: name='CHEMBL5912525', atoms=44
+2026-01-16 15:49:10,747 - INFO - Mol 66: name='CHEMBL5798568', atoms=42
+2026-01-16 15:49:10,748 - INFO - Mol 67: name='CHEMBL5851926', atoms=41
+2026-01-16 15:49:10,748 - INFO - Mol 68: name='CHEMBL6024138', atoms=42
+2026-01-16 15:49:10,749 - INFO - Mol 69: name='CHEMBL5917385', atoms=42
+2026-01-16 15:49:10,749 - INFO - Mol 70: name='CHEMBL5975423', atoms=41
+2026-01-16 15:49:10,750 - INFO - Mol 71: name='CHEMBL5909180', atoms=40
+2026-01-16 15:49:10,750 - INFO - Mol 72: name='CHEMBL5971350', atoms=40
+2026-01-16 15:49:10,751 - INFO - Mol 73: name='CHEMBL5751150', atoms=39
+2026-01-16 15:49:10,751 - INFO - Mol 74: name='CHEMBL5990882', atoms=44
+2026-01-16 15:49:10,752 - INFO - Mol 75: name='CHEMBL5875515', atoms=42
+2026-01-16 15:49:10,752 - INFO - Mol 76: name='CHEMBL6026268', atoms=39
+2026-01-16 15:49:10,753 - INFO - Mol 77: name='CHEMBL6001546', atoms=38
+2026-01-16 15:49:10,753 - INFO - Mol 78: name='CHEMBL5908371', atoms=43
+2026-01-16 15:49:10,754 - INFO - Mol 79: name='CHEMBL5856121', atoms=44
+2026-01-16 15:49:10,754 - INFO - Mol 80: name='CHEMBL5964158', atoms=42
+2026-01-16 15:49:10,755 - INFO - Mol 81: name='CHEMBL5994393', atoms=43
+2026-01-16 15:49:10,755 - INFO - Mol 82: name='CHEMBL5976539', atoms=41
+2026-01-16 15:49:10,756 - INFO - Mol 83: name='CHEMBL5781023', atoms=43
+2026-01-16 15:49:10,756 - INFO - Mol 84: name='CHEMBL5745191', atoms=43
+2026-01-16 15:49:10,757 - INFO - Mol 85: name='CHEMBL5973610', atoms=42
+2026-01-16 15:49:10,757 - INFO - Mol 86: name='CHEMBL6038195', atoms=44
+2026-01-16 15:49:10,758 - INFO - Mol 87: name='CHEMBL5787899', atoms=42
+2026-01-16 15:49:10,758 - INFO - Mol 88: name='CHEMBL5828459', atoms=43
+2026-01-16 15:49:10,759 - INFO - Mol 89: name='CHEMBL5876825', atoms=39
+2026-01-16 15:49:10,759 - INFO - Mol 90: name='CHEMBL5760294', atoms=39
+2026-01-16 15:49:10,760 - INFO - Mol 91: name='CHEMBL6058913', atoms=42
+2026-01-16 15:49:10,760 - INFO - Mol 92: name='CHEMBL5917424', atoms=41
+2026-01-16 15:49:10,761 - INFO - Mol 93: name='CHEMBL5952810', atoms=38
+2026-01-16 15:49:10,761 - INFO - Mol 94: name='CHEMBL6020412', atoms=42
+2026-01-16 15:49:10,762 - INFO - Mol 95: name='CHEMBL5918266', atoms=39
+2026-01-16 15:49:10,762 - INFO - Mol 96: name='CHEMBL5830217', atoms=43
+2026-01-16 15:49:10,763 - INFO - Mol 97: name='CHEMBL5854915', atoms=38
+2026-01-16 15:49:10,763 - INFO - Mol 98: name='CHEMBL5891425', atoms=39
+2026-01-16 15:49:10,764 - INFO - Mol 99: name='CHEMBL5964540', atoms=43
+2026-01-16 15:49:10,764 - INFO - Mol 100: name='CHEMBL5811363', atoms=42
+2026-01-16 15:49:10,765 - INFO - Mol 101: name='CHEMBL5907260', atoms=38
+2026-01-16 15:49:10,765 - INFO - Mol 102: name='CHEMBL6017631', atoms=40
+2026-01-16 15:49:10,766 - INFO - Mol 103: name='CHEMBL6060050', atoms=38
+2026-01-16 15:49:10,766 - INFO - Mol 104: name='CHEMBL5912125', atoms=34
+2026-01-16 15:49:10,766 - INFO - Mol 105: name='CHEMBL5999627', atoms=38
+2026-01-16 15:49:10,767 - INFO - Mol 106: name='CHEMBL5786043', atoms=38
+2026-01-16 15:49:10,767 - INFO - Mol 107: name='CHEMBL5757674', atoms=37
+2026-01-16 15:49:10,768 - INFO - Mol 108: name='CHEMBL5740197', atoms=39
+2026-01-16 15:49:10,768 - INFO - Mol 109: name='CHEMBL5755881', atoms=42
+2026-01-16 15:49:10,769 - INFO - Mol 110: name='CHEMBL5776848', atoms=43
+2026-01-16 15:49:10,769 - INFO - Mol 111: name='CHEMBL5763696', atoms=41
+2026-01-16 15:49:10,770 - INFO - Mol 112: name='CHEMBL5823405', atoms=40
+2026-01-16 15:49:10,770 - INFO - Mol 113: name='CHEMBL5782691', atoms=42
+2026-01-16 15:49:10,771 - INFO - Mol 114: name='CHEMBL5904812', atoms=42
+2026-01-16 15:49:10,771 - INFO - Mol 115: name='CHEMBL5924142', atoms=41
+2026-01-16 15:49:10,772 - INFO - Mol 116: name='CHEMBL5949602', atoms=43
+2026-01-16 15:49:10,772 - INFO - Mol 117: name='CHEMBL5889879', atoms=41
+2026-01-16 15:49:10,773 - INFO - Mol 118: name='CHEMBL5972918', atoms=41
+2026-01-16 15:49:10,773 - INFO - Mol 119: name='CHEMBL5842769', atoms=40
+2026-01-16 15:49:10,774 - INFO - Mol 120: name='CHEMBL5764401', atoms=42
+2026-01-16 15:49:10,774 - INFO - Mol 121: name='CHEMBL5835725', atoms=42
+2026-01-16 15:49:10,775 - INFO - Mol 122: name='CHEMBL5991285', atoms=42
+2026-01-16 15:49:10,775 - INFO - Mol 123: name='CHEMBL502835', atoms=40
+2026-01-16 15:49:10,775 - INFO - Mol 124: name='CHEMBL6065070', atoms=35
+2026-01-16 15:49:10,776 - INFO - Mol 125: name='CHEMBL6019356', atoms=43
+2026-01-16 15:49:10,776 - INFO - Mol 126: name='CHEMBL5913247', atoms=38
+2026-01-16 15:49:10,777 - INFO - Mol 127: name='CHEMBL5794652', atoms=40
+2026-01-16 15:49:10,777 - INFO - Mol 128: name='CHEMBL5885724', atoms=42
+2026-01-16 15:49:10,778 - INFO - Mol 129: name='CHEMBL6023778', atoms=44
+2026-01-16 15:49:10,778 - INFO - Mol 130: name='CHEMBL5882489', atoms=45
+2026-01-16 15:49:10,779 - INFO - Mol 131: name='CHEMBL3288854', atoms=31
+2026-01-16 15:49:10,779 - INFO - Mol 132: name='CHEMBL4462946', atoms=37
+2026-01-16 15:49:10,780 - INFO - Mol 133: name='CHEMBL3893914', atoms=27
+2026-01-16 15:49:10,780 - INFO - Loaded 133 valid molecules from UFF SDF
+2026-01-16 15:49:10,780 - INFO - Обработка ошибок подготовки (0 лигандов)...
+2026-01-16 15:49:10,783 - INFO - Начало докинга для 134 успешных лигандов...
+2026-01-16 15:49:10,783 - INFO - [CHEMBL4068509] Processing in temp_isolation_work_4f65/L001...
+2026-01-16 15:49:10,783 - INFO - [CHEMBL4068509] >>> Start Stage: Setup
+2026-01-16 15:49:10,823 - INFO - Writing UFF SDF for CHEMBL4068509: 38 atoms → temp_isolation_work_4f65/L001/uff/L001_uff.sdf
+2026-01-16 15:49:10,826 - INFO - [CHEMBL4068509] >>> Start Stage: Energy Prediction
+2026-01-16 15:49:17,673 - ERROR - CMD ERROR: python inference.py -test_csv temp_isolation_work_4f65/L001/L001_input.csv -work_path temp_isolation_work_4f65/L001 -ensemble checkpoints/v0.2_energy_model -gpus 1 -batch_size 1 -posfix *val_loss* -energy_output_folder temp_isolation_work_4f65/L001 -uff_as_ligand -debug -reload
+STDERR: ...File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:49:17,673 - ERROR - [CHEMBL4068509] FAILED at stage Energy Prediction: Exit code 1 | File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:49:17,688 - INFO - [CHEMBL4446835] Processing in temp_isolation_work_4f65/L002...
+2026-01-16 15:49:17,688 - INFO - [CHEMBL4446835] >>> Start Stage: Setup
+2026-01-16 15:49:17,760 - INFO - Writing UFF SDF for CHEMBL4446835: 33 atoms → temp_isolation_work_4f65/L002/uff/L002_uff.sdf
+2026-01-16 15:49:17,763 - INFO - [CHEMBL4446835] >>> Start Stage: Energy Prediction
+2026-01-16 15:49:22,990 - ERROR - CMD ERROR: python inference.py -test_csv temp_isolation_work_4f65/L002/L002_input.csv -work_path temp_isolation_work_4f65/L002 -ensemble checkpoints/v0.2_energy_model -gpus 1 -batch_size 1 -posfix *val_loss* -energy_output_folder temp_isolation_work_4f65/L002 -uff_as_ligand -debug -reload
+STDERR: ...File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:49:22,991 - ERROR - [CHEMBL4446835] FAILED at stage Energy Prediction: Exit code 1 | File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:49:23,003 - INFO - [CHEMBL189584] Processing in temp_isolation_work_4f65/L003...
+2026-01-16 15:49:23,003 - INFO - [CHEMBL189584] >>> Start Stage: Setup
+2026-01-16 15:49:23,056 - INFO - Writing UFF SDF for CHEMBL189584: 38 atoms → temp_isolation_work_4f65/L003/uff/L003_uff.sdf
+2026-01-16 15:49:23,058 - INFO - [CHEMBL189584] >>> Start Stage: Energy Prediction
+2026-01-16 15:49:28,324 - ERROR - CMD ERROR: python inference.py -test_csv temp_isolation_work_4f65/L003/L003_input.csv -work_path temp_isolation_work_4f65/L003 -ensemble checkpoints/v0.2_energy_model -gpus 1 -batch_size 1 -posfix *val_loss* -energy_output_folder temp_isolation_work_4f65/L003 -uff_as_ligand -debug -reload
+STDERR: ...File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:49:28,325 - ERROR - [CHEMBL189584] FAILED at stage Energy Prediction: Exit code 1 | File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:49:28,337 - INFO - [CHEMBL189584] Processing in temp_isolation_work_4f65/L004...
+2026-01-16 15:49:28,337 - INFO - [CHEMBL189584] >>> Start Stage: Setup
+2026-01-16 15:49:28,406 - INFO - Writing UFF SDF for CHEMBL189584: 38 atoms → temp_isolation_work_4f65/L004/uff/L004_uff.sdf
+2026-01-16 15:49:28,409 - INFO - [CHEMBL189584] >>> Start Stage: Energy Prediction
+2026-01-16 15:49:33,710 - ERROR - CMD ERROR: python inference.py -test_csv temp_isolation_work_4f65/L004/L004_input.csv -work_path temp_isolation_work_4f65/L004 -ensemble checkpoints/v0.2_energy_model -gpus 1 -batch_size 1 -posfix *val_loss* -energy_output_folder temp_isolation_work_4f65/L004 -uff_as_ligand -debug -reload
+STDERR: ...File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:49:33,710 - ERROR - [CHEMBL189584] FAILED at stage Energy Prediction: Exit code 1 | File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:49:33,724 - INFO - [CHEMBL5751745] Processing in temp_isolation_work_4f65/L005...
+2026-01-16 15:49:33,724 - INFO - [CHEMBL5751745] >>> Start Stage: Setup
+2026-01-16 15:49:33,786 - INFO - Writing UFF SDF for CHEMBL5751745: 43 atoms → temp_isolation_work_4f65/L005/uff/L005_uff.sdf
+2026-01-16 15:49:33,788 - INFO - [CHEMBL5751745] >>> Start Stage: Energy Prediction
+2026-01-16 15:49:39,089 - ERROR - CMD ERROR: python inference.py -test_csv temp_isolation_work_4f65/L005/L005_input.csv -work_path temp_isolation_work_4f65/L005 -ensemble checkpoints/v0.2_energy_model -gpus 1 -batch_size 1 -posfix *val_loss* -energy_output_folder temp_isolation_work_4f65/L005 -uff_as_ligand -debug -reload
+STDERR: ...File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:49:39,089 - ERROR - [CHEMBL5751745] FAILED at stage Energy Prediction: Exit code 1 | File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:49:39,102 - INFO - [CHEMBL5953091] Processing in temp_isolation_work_4f65/L006...
+2026-01-16 15:49:39,102 - INFO - [CHEMBL5953091] >>> Start Stage: Setup
+2026-01-16 15:49:39,109 - INFO - Writing UFF SDF for CHEMBL5953091: 43 atoms → temp_isolation_work_4f65/L006/uff/L006_uff.sdf
+2026-01-16 15:49:39,112 - INFO - [CHEMBL5953091] >>> Start Stage: Energy Prediction
+2026-01-16 15:49:44,499 - ERROR - CMD ERROR: python inference.py -test_csv temp_isolation_work_4f65/L006/L006_input.csv -work_path temp_isolation_work_4f65/L006 -ensemble checkpoints/v0.2_energy_model -gpus 1 -batch_size 1 -posfix *val_loss* -energy_output_folder temp_isolation_work_4f65/L006 -uff_as_ligand -debug -reload
+STDERR: ...File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:49:44,500 - ERROR - [CHEMBL5953091] FAILED at stage Energy Prediction: Exit code 1 | File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:49:44,512 - INFO - [CHEMBL5945261] Processing in temp_isolation_work_4f65/L007...
+2026-01-16 15:49:44,512 - INFO - [CHEMBL5945261] >>> Start Stage: Setup
+2026-01-16 15:49:44,520 - INFO - Writing UFF SDF for CHEMBL5945261: 41 atoms → temp_isolation_work_4f65/L007/uff/L007_uff.sdf
+2026-01-16 15:49:44,523 - INFO - [CHEMBL5945261] >>> Start Stage: Energy Prediction
+2026-01-16 15:49:49,753 - ERROR - CMD ERROR: python inference.py -test_csv temp_isolation_work_4f65/L007/L007_input.csv -work_path temp_isolation_work_4f65/L007 -ensemble checkpoints/v0.2_energy_model -gpus 1 -batch_size 1 -posfix *val_loss* -energy_output_folder temp_isolation_work_4f65/L007 -uff_as_ligand -debug -reload
+STDERR: ...File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:49:49,754 - ERROR - [CHEMBL5945261] FAILED at stage Energy Prediction: Exit code 1 | File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:49:49,766 - INFO - [CHEMBL5759219] Processing in temp_isolation_work_4f65/L008...
+2026-01-16 15:49:49,766 - INFO - [CHEMBL5759219] >>> Start Stage: Setup
+2026-01-16 15:49:49,775 - INFO - Writing UFF SDF for CHEMBL5759219: 42 atoms → temp_isolation_work_4f65/L008/uff/L008_uff.sdf
+2026-01-16 15:49:49,778 - INFO - [CHEMBL5759219] >>> Start Stage: Energy Prediction
+2026-01-16 15:49:55,000 - ERROR - CMD ERROR: python inference.py -test_csv temp_isolation_work_4f65/L008/L008_input.csv -work_path temp_isolation_work_4f65/L008 -ensemble checkpoints/v0.2_energy_model -gpus 1 -batch_size 1 -posfix *val_loss* -energy_output_folder temp_isolation_work_4f65/L008 -uff_as_ligand -debug -reload
+STDERR: ...File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:49:55,000 - ERROR - [CHEMBL5759219] FAILED at stage Energy Prediction: Exit code 1 | File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:49:55,013 - INFO - [CHEMBL6024653] Processing in temp_isolation_work_4f65/L009...
+2026-01-16 15:49:55,013 - INFO - [CHEMBL6024653] >>> Start Stage: Setup
+2026-01-16 15:49:55,021 - INFO - Writing UFF SDF for CHEMBL6024653: 47 atoms → temp_isolation_work_4f65/L009/uff/L009_uff.sdf
+2026-01-16 15:49:55,024 - INFO - [CHEMBL6024653] >>> Start Stage: Energy Prediction
+2026-01-16 15:50:00,267 - ERROR - CMD ERROR: python inference.py -test_csv temp_isolation_work_4f65/L009/L009_input.csv -work_path temp_isolation_work_4f65/L009 -ensemble checkpoints/v0.2_energy_model -gpus 1 -batch_size 1 -posfix *val_loss* -energy_output_folder temp_isolation_work_4f65/L009 -uff_as_ligand -debug -reload
+STDERR: ...File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:50:00,268 - ERROR - [CHEMBL6024653] FAILED at stage Energy Prediction: Exit code 1 | File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:50:00,280 - INFO - [CHEMBL5979151] Processing in temp_isolation_work_4f65/L010...
+2026-01-16 15:50:00,280 - INFO - [CHEMBL5979151] >>> Start Stage: Setup
+2026-01-16 15:50:00,288 - INFO - Writing UFF SDF for CHEMBL5979151: 46 atoms → temp_isolation_work_4f65/L010/uff/L010_uff.sdf
+2026-01-16 15:50:00,290 - INFO - [CHEMBL5979151] >>> Start Stage: Energy Prediction
+2026-01-16 15:50:05,489 - ERROR - CMD ERROR: python inference.py -test_csv temp_isolation_work_4f65/L010/L010_input.csv -work_path temp_isolation_work_4f65/L010 -ensemble checkpoints/v0.2_energy_model -gpus 1 -batch_size 1 -posfix *val_loss* -energy_output_folder temp_isolation_work_4f65/L010 -uff_as_ligand -debug -reload
+STDERR: ...File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:50:05,489 - ERROR - [CHEMBL5979151] FAILED at stage Energy Prediction: Exit code 1 | File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:50:05,504 - INFO - [CHEMBL5752345] Processing in temp_isolation_work_4f65/L011...
+2026-01-16 15:50:05,504 - INFO - [CHEMBL5752345] >>> Start Stage: Setup
+2026-01-16 15:50:05,512 - INFO - Writing UFF SDF for CHEMBL5752345: 46 atoms → temp_isolation_work_4f65/L011/uff/L011_uff.sdf
+2026-01-16 15:50:05,515 - INFO - [CHEMBL5752345] >>> Start Stage: Energy Prediction
+2026-01-16 15:50:10,805 - ERROR - CMD ERROR: python inference.py -test_csv temp_isolation_work_4f65/L011/L011_input.csv -work_path temp_isolation_work_4f65/L011 -ensemble checkpoints/v0.2_energy_model -gpus 1 -batch_size 1 -posfix *val_loss* -energy_output_folder temp_isolation_work_4f65/L011 -uff_as_ligand -debug -reload
+STDERR: ...File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:50:10,805 - ERROR - [CHEMBL5752345] FAILED at stage Energy Prediction: Exit code 1 | File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:50:10,819 - INFO - [CHEMBL5841760] Processing in temp_isolation_work_4f65/L012...
+2026-01-16 15:50:10,820 - INFO - [CHEMBL5841760] >>> Start Stage: Setup
+2026-01-16 15:50:10,828 - INFO - Writing UFF SDF for CHEMBL5841760: 45 atoms → temp_isolation_work_4f65/L012/uff/L012_uff.sdf
+2026-01-16 15:50:10,830 - INFO - [CHEMBL5841760] >>> Start Stage: Energy Prediction
+2026-01-16 15:50:16,187 - ERROR - CMD ERROR: python inference.py -test_csv temp_isolation_work_4f65/L012/L012_input.csv -work_path temp_isolation_work_4f65/L012 -ensemble checkpoints/v0.2_energy_model -gpus 1 -batch_size 1 -posfix *val_loss* -energy_output_folder temp_isolation_work_4f65/L012 -uff_as_ligand -debug -reload
+STDERR: ...File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:50:16,188 - ERROR - [CHEMBL5841760] FAILED at stage Energy Prediction: Exit code 1 | File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:50:16,200 - INFO - [CHEMBL6030373] Processing in temp_isolation_work_4f65/L013...
+2026-01-16 15:50:16,200 - INFO - [CHEMBL6030373] >>> Start Stage: Setup
+2026-01-16 15:50:16,208 - INFO - Writing UFF SDF for CHEMBL6030373: 19 atoms → temp_isolation_work_4f65/L013/uff/L013_uff.sdf
+2026-01-16 15:50:16,210 - INFO - [CHEMBL6030373] >>> Start Stage: Energy Prediction
+2026-01-16 15:50:21,629 - ERROR - CMD ERROR: python inference.py -test_csv temp_isolation_work_4f65/L013/L013_input.csv -work_path temp_isolation_work_4f65/L013 -ensemble checkpoints/v0.2_energy_model -gpus 1 -batch_size 1 -posfix *val_loss* -energy_output_folder temp_isolation_work_4f65/L013 -uff_as_ligand -debug -reload
+STDERR: ...File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:50:21,629 - ERROR - [CHEMBL6030373] FAILED at stage Energy Prediction: Exit code 1 | File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:50:21,642 - INFO - [CHEMBL5779248] Processing in temp_isolation_work_4f65/L014...
+2026-01-16 15:50:21,642 - INFO - [CHEMBL5779248] >>> Start Stage: Setup
+2026-01-16 15:50:21,649 - INFO - Writing UFF SDF for CHEMBL5779248: 42 atoms → temp_isolation_work_4f65/L014/uff/L014_uff.sdf
+2026-01-16 15:50:21,652 - INFO - [CHEMBL5779248] >>> Start Stage: Energy Prediction
+2026-01-16 15:50:26,687 - ERROR - CMD ERROR: python inference.py -test_csv temp_isolation_work_4f65/L014/L014_input.csv -work_path temp_isolation_work_4f65/L014 -ensemble checkpoints/v0.2_energy_model -gpus 1 -batch_size 1 -posfix *val_loss* -energy_output_folder temp_isolation_work_4f65/L014 -uff_as_ligand -debug -reload
+STDERR: ...File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:50:26,687 - ERROR - [CHEMBL5779248] FAILED at stage Energy Prediction: Exit code 1 | File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:50:26,697 - INFO - [CHEMBL5960246] Processing in temp_isolation_work_4f65/L015...
+2026-01-16 15:50:26,697 - INFO - [CHEMBL5960246] >>> Start Stage: Setup
+2026-01-16 15:50:26,703 - INFO - Writing UFF SDF for CHEMBL5960246: 41 atoms → temp_isolation_work_4f65/L015/uff/L015_uff.sdf
+2026-01-16 15:50:26,705 - INFO - [CHEMBL5960246] >>> Start Stage: Energy Prediction
+2026-01-16 15:50:31,743 - ERROR - CMD ERROR: python inference.py -test_csv temp_isolation_work_4f65/L015/L015_input.csv -work_path temp_isolation_work_4f65/L015 -ensemble checkpoints/v0.2_energy_model -gpus 1 -batch_size 1 -posfix *val_loss* -energy_output_folder temp_isolation_work_4f65/L015 -uff_as_ligand -debug -reload
+STDERR: ...File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:50:31,743 - ERROR - [CHEMBL5960246] FAILED at stage Energy Prediction: Exit code 1 | File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:50:31,758 - INFO - [CHEMBL5826243] Processing in temp_isolation_work_4f65/L016...
+2026-01-16 15:50:31,758 - INFO - [CHEMBL5826243] >>> Start Stage: Setup
+2026-01-16 15:50:31,766 - INFO - Writing UFF SDF for CHEMBL5826243: 44 atoms → temp_isolation_work_4f65/L016/uff/L016_uff.sdf
+2026-01-16 15:50:31,769 - INFO - [CHEMBL5826243] >>> Start Stage: Energy Prediction
+2026-01-16 15:50:36,863 - ERROR - CMD ERROR: python inference.py -test_csv temp_isolation_work_4f65/L016/L016_input.csv -work_path temp_isolation_work_4f65/L016 -ensemble checkpoints/v0.2_energy_model -gpus 1 -batch_size 1 -posfix *val_loss* -energy_output_folder temp_isolation_work_4f65/L016 -uff_as_ligand -debug -reload
+STDERR: ...File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:50:36,863 - ERROR - [CHEMBL5826243] FAILED at stage Energy Prediction: Exit code 1 | File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:50:36,878 - INFO - [CHEMBL5900483] Processing in temp_isolation_work_4f65/L017...
+2026-01-16 15:50:36,878 - INFO - [CHEMBL5900483] >>> Start Stage: Setup
+2026-01-16 15:50:36,887 - INFO - Writing UFF SDF for CHEMBL5900483: 43 atoms → temp_isolation_work_4f65/L017/uff/L017_uff.sdf
+2026-01-16 15:50:36,890 - INFO - [CHEMBL5900483] >>> Start Stage: Energy Prediction
+2026-01-16 15:50:42,065 - ERROR - CMD ERROR: python inference.py -test_csv temp_isolation_work_4f65/L017/L017_input.csv -work_path temp_isolation_work_4f65/L017 -ensemble checkpoints/v0.2_energy_model -gpus 1 -batch_size 1 -posfix *val_loss* -energy_output_folder temp_isolation_work_4f65/L017 -uff_as_ligand -debug -reload
+STDERR: ...File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:50:42,065 - ERROR - [CHEMBL5900483] FAILED at stage Energy Prediction: Exit code 1 | File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:50:42,078 - INFO - [CHEMBL6006379] Processing in temp_isolation_work_4f65/L018...
+2026-01-16 15:50:42,078 - INFO - [CHEMBL6006379] >>> Start Stage: Setup
+2026-01-16 15:50:42,086 - INFO - Writing UFF SDF for CHEMBL6006379: 44 atoms → temp_isolation_work_4f65/L018/uff/L018_uff.sdf
+2026-01-16 15:50:42,089 - INFO - [CHEMBL6006379] >>> Start Stage: Energy Prediction
+2026-01-16 15:50:47,341 - ERROR - CMD ERROR: python inference.py -test_csv temp_isolation_work_4f65/L018/L018_input.csv -work_path temp_isolation_work_4f65/L018 -ensemble checkpoints/v0.2_energy_model -gpus 1 -batch_size 1 -posfix *val_loss* -energy_output_folder temp_isolation_work_4f65/L018 -uff_as_ligand -debug -reload
+STDERR: ...File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:50:47,342 - ERROR - [CHEMBL6006379] FAILED at stage Energy Prediction: Exit code 1 | File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:50:47,357 - INFO - [CHEMBL5934811] Processing in temp_isolation_work_4f65/L019...
+2026-01-16 15:50:47,358 - INFO - [CHEMBL5934811] >>> Start Stage: Setup
+2026-01-16 15:50:47,365 - INFO - Writing UFF SDF for CHEMBL5934811: 45 atoms → temp_isolation_work_4f65/L019/uff/L019_uff.sdf
+2026-01-16 15:50:47,368 - INFO - [CHEMBL5934811] >>> Start Stage: Energy Prediction
+2026-01-16 15:50:52,485 - ERROR - CMD ERROR: python inference.py -test_csv temp_isolation_work_4f65/L019/L019_input.csv -work_path temp_isolation_work_4f65/L019 -ensemble checkpoints/v0.2_energy_model -gpus 1 -batch_size 1 -posfix *val_loss* -energy_output_folder temp_isolation_work_4f65/L019 -uff_as_ligand -debug -reload
+STDERR: ...File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:50:52,485 - ERROR - [CHEMBL5934811] FAILED at stage Energy Prediction: Exit code 1 | File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:50:52,500 - INFO - [CHEMBL5963316] Processing in temp_isolation_work_4f65/L020...
+2026-01-16 15:50:52,500 - INFO - [CHEMBL5963316] >>> Start Stage: Setup
+2026-01-16 15:50:52,508 - INFO - Writing UFF SDF for CHEMBL5963316: 42 atoms → temp_isolation_work_4f65/L020/uff/L020_uff.sdf
+2026-01-16 15:50:52,511 - INFO - [CHEMBL5963316] >>> Start Stage: Energy Prediction
+2026-01-16 15:50:57,671 - ERROR - CMD ERROR: python inference.py -test_csv temp_isolation_work_4f65/L020/L020_input.csv -work_path temp_isolation_work_4f65/L020 -ensemble checkpoints/v0.2_energy_model -gpus 1 -batch_size 1 -posfix *val_loss* -energy_output_folder temp_isolation_work_4f65/L020 -uff_as_ligand -debug -reload
+STDERR: ...File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:50:57,672 - ERROR - [CHEMBL5963316] FAILED at stage Energy Prediction: Exit code 1 | File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:50:57,687 - INFO - [CHEMBL5854515] Processing in temp_isolation_work_4f65/L021...
+2026-01-16 15:50:57,687 - INFO - [CHEMBL5854515] >>> Start Stage: Setup
+2026-01-16 15:50:57,695 - INFO - Writing UFF SDF for CHEMBL5854515: 43 atoms → temp_isolation_work_4f65/L021/uff/L021_uff.sdf
+2026-01-16 15:50:57,698 - INFO - [CHEMBL5854515] >>> Start Stage: Energy Prediction
+2026-01-16 15:51:02,789 - ERROR - CMD ERROR: python inference.py -test_csv temp_isolation_work_4f65/L021/L021_input.csv -work_path temp_isolation_work_4f65/L021 -ensemble checkpoints/v0.2_energy_model -gpus 1 -batch_size 1 -posfix *val_loss* -energy_output_folder temp_isolation_work_4f65/L021 -uff_as_ligand -debug -reload
+STDERR: ...File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:51:02,789 - ERROR - [CHEMBL5854515] FAILED at stage Energy Prediction: Exit code 1 | File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:51:02,803 - INFO - [CHEMBL6062938] Processing in temp_isolation_work_4f65/L022...
+2026-01-16 15:51:02,803 - INFO - [CHEMBL6062938] >>> Start Stage: Setup
+2026-01-16 15:51:02,810 - INFO - Writing UFF SDF for CHEMBL6062938: 43 atoms → temp_isolation_work_4f65/L022/uff/L022_uff.sdf
+2026-01-16 15:51:02,813 - INFO - [CHEMBL6062938] >>> Start Stage: Energy Prediction
+2026-01-16 15:51:07,910 - ERROR - CMD ERROR: python inference.py -test_csv temp_isolation_work_4f65/L022/L022_input.csv -work_path temp_isolation_work_4f65/L022 -ensemble checkpoints/v0.2_energy_model -gpus 1 -batch_size 1 -posfix *val_loss* -energy_output_folder temp_isolation_work_4f65/L022 -uff_as_ligand -debug -reload
+STDERR: ...File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:51:07,910 - ERROR - [CHEMBL6062938] FAILED at stage Energy Prediction: Exit code 1 | File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:51:07,926 - INFO - [CHEMBL6046549] Processing in temp_isolation_work_4f65/L023...
+2026-01-16 15:51:07,926 - INFO - [CHEMBL6046549] >>> Start Stage: Setup
+2026-01-16 15:51:07,934 - INFO - Writing UFF SDF for CHEMBL6046549: 43 atoms → temp_isolation_work_4f65/L023/uff/L023_uff.sdf
+2026-01-16 15:51:07,937 - INFO - [CHEMBL6046549] >>> Start Stage: Energy Prediction
+2026-01-16 15:51:13,088 - ERROR - CMD ERROR: python inference.py -test_csv temp_isolation_work_4f65/L023/L023_input.csv -work_path temp_isolation_work_4f65/L023 -ensemble checkpoints/v0.2_energy_model -gpus 1 -batch_size 1 -posfix *val_loss* -energy_output_folder temp_isolation_work_4f65/L023 -uff_as_ligand -debug -reload
+STDERR: ...File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:51:13,088 - ERROR - [CHEMBL6046549] FAILED at stage Energy Prediction: Exit code 1 | File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:51:13,101 - INFO - [CHEMBL6051668] Processing in temp_isolation_work_4f65/L024...
+2026-01-16 15:51:13,101 - INFO - [CHEMBL6051668] >>> Start Stage: Setup
+2026-01-16 15:51:13,108 - INFO - Writing UFF SDF for CHEMBL6051668: 40 atoms → temp_isolation_work_4f65/L024/uff/L024_uff.sdf
+2026-01-16 15:51:13,111 - INFO - [CHEMBL6051668] >>> Start Stage: Energy Prediction
+2026-01-16 15:51:18,322 - ERROR - CMD ERROR: python inference.py -test_csv temp_isolation_work_4f65/L024/L024_input.csv -work_path temp_isolation_work_4f65/L024 -ensemble checkpoints/v0.2_energy_model -gpus 1 -batch_size 1 -posfix *val_loss* -energy_output_folder temp_isolation_work_4f65/L024 -uff_as_ligand -debug -reload
+STDERR: ...File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:51:18,323 - ERROR - [CHEMBL6051668] FAILED at stage Energy Prediction: Exit code 1 | File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:51:18,336 - INFO - [CHEMBL5858912] Processing in temp_isolation_work_4f65/L025...
+2026-01-16 15:51:18,336 - INFO - [CHEMBL5858912] >>> Start Stage: Setup
+2026-01-16 15:51:18,343 - INFO - Writing UFF SDF for CHEMBL5858912: 40 atoms → temp_isolation_work_4f65/L025/uff/L025_uff.sdf
+2026-01-16 15:51:18,345 - INFO - [CHEMBL5858912] >>> Start Stage: Energy Prediction
+2026-01-16 15:51:23,828 - ERROR - CMD ERROR: python inference.py -test_csv temp_isolation_work_4f65/L025/L025_input.csv -work_path temp_isolation_work_4f65/L025 -ensemble checkpoints/v0.2_energy_model -gpus 1 -batch_size 1 -posfix *val_loss* -energy_output_folder temp_isolation_work_4f65/L025 -uff_as_ligand -debug -reload
+STDERR: ...File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:51:23,828 - ERROR - [CHEMBL5858912] FAILED at stage Energy Prediction: Exit code 1 | File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:51:23,842 - INFO - [CHEMBL5740416] Processing in temp_isolation_work_4f65/L026...
+2026-01-16 15:51:23,842 - INFO - [CHEMBL5740416] >>> Start Stage: Setup
+2026-01-16 15:51:23,849 - INFO - Writing UFF SDF for CHEMBL5740416: 42 atoms → temp_isolation_work_4f65/L026/uff/L026_uff.sdf
+2026-01-16 15:51:23,852 - INFO - [CHEMBL5740416] >>> Start Stage: Energy Prediction
+2026-01-16 15:51:29,371 - ERROR - CMD ERROR: python inference.py -test_csv temp_isolation_work_4f65/L026/L026_input.csv -work_path temp_isolation_work_4f65/L026 -ensemble checkpoints/v0.2_energy_model -gpus 1 -batch_size 1 -posfix *val_loss* -energy_output_folder temp_isolation_work_4f65/L026 -uff_as_ligand -debug -reload
+STDERR: ...File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:51:29,372 - ERROR - [CHEMBL5740416] FAILED at stage Energy Prediction: Exit code 1 | File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:51:29,383 - INFO - [CHEMBL5753399] Processing in temp_isolation_work_4f65/L027...
+2026-01-16 15:51:29,383 - INFO - [CHEMBL5753399] >>> Start Stage: Setup
+2026-01-16 15:51:29,390 - INFO - Writing UFF SDF for CHEMBL5753399: 41 atoms → temp_isolation_work_4f65/L027/uff/L027_uff.sdf
+2026-01-16 15:51:29,392 - INFO - [CHEMBL5753399] >>> Start Stage: Energy Prediction
+2026-01-16 15:51:35,769 - ERROR - CMD ERROR: python inference.py -test_csv temp_isolation_work_4f65/L027/L027_input.csv -work_path temp_isolation_work_4f65/L027 -ensemble checkpoints/v0.2_energy_model -gpus 1 -batch_size 1 -posfix *val_loss* -energy_output_folder temp_isolation_work_4f65/L027 -uff_as_ligand -debug -reload
+STDERR: ...File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:51:35,769 - ERROR - [CHEMBL5753399] FAILED at stage Energy Prediction: Exit code 1 | File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:51:35,780 - INFO - [CHEMBL6059845] Processing in temp_isolation_work_4f65/L028...
+2026-01-16 15:51:35,780 - INFO - [CHEMBL6059845] >>> Start Stage: Setup
+2026-01-16 15:51:35,787 - INFO - Writing UFF SDF for CHEMBL6059845: 44 atoms → temp_isolation_work_4f65/L028/uff/L028_uff.sdf
+2026-01-16 15:51:35,789 - INFO - [CHEMBL6059845] >>> Start Stage: Energy Prediction
+2026-01-16 15:51:42,083 - ERROR - CMD ERROR: python inference.py -test_csv temp_isolation_work_4f65/L028/L028_input.csv -work_path temp_isolation_work_4f65/L028 -ensemble checkpoints/v0.2_energy_model -gpus 1 -batch_size 1 -posfix *val_loss* -energy_output_folder temp_isolation_work_4f65/L028 -uff_as_ligand -debug -reload
+STDERR: ...File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:51:42,083 - ERROR - [CHEMBL6059845] FAILED at stage Energy Prediction: Exit code 1 | File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:51:42,095 - INFO - [CHEMBL6051368] Processing in temp_isolation_work_4f65/L029...
+2026-01-16 15:51:42,095 - INFO - [CHEMBL6051368] >>> Start Stage: Setup
+2026-01-16 15:51:42,104 - INFO - Writing UFF SDF for CHEMBL6051368: 45 atoms → temp_isolation_work_4f65/L029/uff/L029_uff.sdf
+2026-01-16 15:51:42,106 - INFO - [CHEMBL6051368] >>> Start Stage: Energy Prediction
+2026-01-16 15:51:48,283 - ERROR - CMD ERROR: python inference.py -test_csv temp_isolation_work_4f65/L029/L029_input.csv -work_path temp_isolation_work_4f65/L029 -ensemble checkpoints/v0.2_energy_model -gpus 1 -batch_size 1 -posfix *val_loss* -energy_output_folder temp_isolation_work_4f65/L029 -uff_as_ligand -debug -reload
+STDERR: ...File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:51:48,284 - ERROR - [CHEMBL6051368] FAILED at stage Energy Prediction: Exit code 1 | File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:51:48,296 - INFO - [CHEMBL5796144] Processing in temp_isolation_work_4f65/L030...
+2026-01-16 15:51:48,297 - INFO - [CHEMBL5796144] >>> Start Stage: Setup
+2026-01-16 15:51:48,303 - INFO - Writing UFF SDF for CHEMBL5796144: 46 atoms → temp_isolation_work_4f65/L030/uff/L030_uff.sdf
+2026-01-16 15:51:48,306 - INFO - [CHEMBL5796144] >>> Start Stage: Energy Prediction
+2026-01-16 15:51:54,665 - ERROR - CMD ERROR: python inference.py -test_csv temp_isolation_work_4f65/L030/L030_input.csv -work_path temp_isolation_work_4f65/L030 -ensemble checkpoints/v0.2_energy_model -gpus 1 -batch_size 1 -posfix *val_loss* -energy_output_folder temp_isolation_work_4f65/L030 -uff_as_ligand -debug -reload
+STDERR: ...File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:51:54,666 - ERROR - [CHEMBL5796144] FAILED at stage Energy Prediction: Exit code 1 | File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:51:54,679 - INFO - [CHEMBL5821394] Processing in temp_isolation_work_4f65/L031...
+2026-01-16 15:51:54,679 - INFO - [CHEMBL5821394] >>> Start Stage: Setup
+2026-01-16 15:51:54,686 - INFO - Writing UFF SDF for CHEMBL5821394: 43 atoms → temp_isolation_work_4f65/L031/uff/L031_uff.sdf
+2026-01-16 15:51:54,688 - INFO - [CHEMBL5821394] >>> Start Stage: Energy Prediction
+2026-01-16 15:52:00,900 - ERROR - CMD ERROR: python inference.py -test_csv temp_isolation_work_4f65/L031/L031_input.csv -work_path temp_isolation_work_4f65/L031 -ensemble checkpoints/v0.2_energy_model -gpus 1 -batch_size 1 -posfix *val_loss* -energy_output_folder temp_isolation_work_4f65/L031 -uff_as_ligand -debug -reload
+STDERR: ...File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:52:00,900 - ERROR - [CHEMBL5821394] FAILED at stage Energy Prediction: Exit code 1 | File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:52:00,913 - INFO - [CHEMBL5853674] Processing in temp_isolation_work_4f65/L032...
+2026-01-16 15:52:00,913 - INFO - [CHEMBL5853674] >>> Start Stage: Setup
+2026-01-16 15:52:00,922 - INFO - Writing UFF SDF for CHEMBL5853674: 44 atoms → temp_isolation_work_4f65/L032/uff/L032_uff.sdf
+2026-01-16 15:52:00,925 - INFO - [CHEMBL5853674] >>> Start Stage: Energy Prediction
+2026-01-16 15:52:07,528 - ERROR - CMD ERROR: python inference.py -test_csv temp_isolation_work_4f65/L032/L032_input.csv -work_path temp_isolation_work_4f65/L032 -ensemble checkpoints/v0.2_energy_model -gpus 1 -batch_size 1 -posfix *val_loss* -energy_output_folder temp_isolation_work_4f65/L032 -uff_as_ligand -debug -reload
+STDERR: ...File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:52:07,528 - ERROR - [CHEMBL5853674] FAILED at stage Energy Prediction: Exit code 1 | File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:52:07,543 - INFO - [CHEMBL5947799] Processing in temp_isolation_work_4f65/L033...
+2026-01-16 15:52:07,543 - INFO - [CHEMBL5947799] >>> Start Stage: Setup
+2026-01-16 15:52:07,552 - INFO - Writing UFF SDF for CHEMBL5947799: 45 atoms → temp_isolation_work_4f65/L033/uff/L033_uff.sdf
+2026-01-16 15:52:07,554 - INFO - [CHEMBL5947799] >>> Start Stage: Energy Prediction
+2026-01-16 15:52:13,978 - ERROR - CMD ERROR: python inference.py -test_csv temp_isolation_work_4f65/L033/L033_input.csv -work_path temp_isolation_work_4f65/L033 -ensemble checkpoints/v0.2_energy_model -gpus 1 -batch_size 1 -posfix *val_loss* -energy_output_folder temp_isolation_work_4f65/L033 -uff_as_ligand -debug -reload
+STDERR: ...File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:52:13,978 - ERROR - [CHEMBL5947799] FAILED at stage Energy Prediction: Exit code 1 | File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:52:13,995 - INFO - [CHEMBL5973328] Processing in temp_isolation_work_4f65/L034...
+2026-01-16 15:52:13,995 - INFO - [CHEMBL5973328] >>> Start Stage: Setup
+2026-01-16 15:52:14,004 - INFO - Writing UFF SDF for CHEMBL5973328: 45 atoms → temp_isolation_work_4f65/L034/uff/L034_uff.sdf
+2026-01-16 15:52:14,007 - INFO - [CHEMBL5973328] >>> Start Stage: Energy Prediction
+2026-01-16 15:52:19,423 - ERROR - CMD ERROR: python inference.py -test_csv temp_isolation_work_4f65/L034/L034_input.csv -work_path temp_isolation_work_4f65/L034 -ensemble checkpoints/v0.2_energy_model -gpus 1 -batch_size 1 -posfix *val_loss* -energy_output_folder temp_isolation_work_4f65/L034 -uff_as_ligand -debug -reload
+STDERR: ...File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:52:19,424 - ERROR - [CHEMBL5973328] FAILED at stage Energy Prediction: Exit code 1 | File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:52:19,436 - INFO - [CHEMBL6009160] Processing in temp_isolation_work_4f65/L035...
+2026-01-16 15:52:19,436 - INFO - [CHEMBL6009160] >>> Start Stage: Setup
+2026-01-16 15:52:19,443 - INFO - Writing UFF SDF for CHEMBL6009160: 44 atoms → temp_isolation_work_4f65/L035/uff/L035_uff.sdf
+2026-01-16 15:52:19,445 - INFO - [CHEMBL6009160] >>> Start Stage: Energy Prediction
+2026-01-16 15:52:24,815 - ERROR - CMD ERROR: python inference.py -test_csv temp_isolation_work_4f65/L035/L035_input.csv -work_path temp_isolation_work_4f65/L035 -ensemble checkpoints/v0.2_energy_model -gpus 1 -batch_size 1 -posfix *val_loss* -energy_output_folder temp_isolation_work_4f65/L035 -uff_as_ligand -debug -reload
+STDERR: ...File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:52:24,815 - ERROR - [CHEMBL6009160] FAILED at stage Energy Prediction: Exit code 1 | File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:52:24,831 - INFO - [CHEMBL5927685] Processing in temp_isolation_work_4f65/L036...
+2026-01-16 15:52:24,831 - INFO - [CHEMBL5927685] >>> Start Stage: Setup
+2026-01-16 15:52:24,839 - INFO - Writing UFF SDF for CHEMBL5927685: 41 atoms → temp_isolation_work_4f65/L036/uff/L036_uff.sdf
+2026-01-16 15:52:24,842 - INFO - [CHEMBL5927685] >>> Start Stage: Energy Prediction
+2026-01-16 15:52:29,920 - ERROR - CMD ERROR: python inference.py -test_csv temp_isolation_work_4f65/L036/L036_input.csv -work_path temp_isolation_work_4f65/L036 -ensemble checkpoints/v0.2_energy_model -gpus 1 -batch_size 1 -posfix *val_loss* -energy_output_folder temp_isolation_work_4f65/L036 -uff_as_ligand -debug -reload
+STDERR: ...File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:52:29,920 - ERROR - [CHEMBL5927685] FAILED at stage Energy Prediction: Exit code 1 | File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:52:29,935 - INFO - [CHEMBL6008313] Processing in temp_isolation_work_4f65/L037...
+2026-01-16 15:52:29,935 - INFO - [CHEMBL6008313] >>> Start Stage: Setup
+2026-01-16 15:52:29,943 - INFO - Writing UFF SDF for CHEMBL6008313: 38 atoms → temp_isolation_work_4f65/L037/uff/L037_uff.sdf
+2026-01-16 15:52:29,946 - INFO - [CHEMBL6008313] >>> Start Stage: Energy Prediction
+2026-01-16 15:52:35,045 - ERROR - CMD ERROR: python inference.py -test_csv temp_isolation_work_4f65/L037/L037_input.csv -work_path temp_isolation_work_4f65/L037 -ensemble checkpoints/v0.2_energy_model -gpus 1 -batch_size 1 -posfix *val_loss* -energy_output_folder temp_isolation_work_4f65/L037 -uff_as_ligand -debug -reload
+STDERR: ...File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:52:35,046 - ERROR - [CHEMBL6008313] FAILED at stage Energy Prediction: Exit code 1 | File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:52:35,060 - INFO - [CHEMBL5794260] Processing in temp_isolation_work_4f65/L038...
+2026-01-16 15:52:35,060 - INFO - [CHEMBL5794260] >>> Start Stage: Setup
+2026-01-16 15:52:35,068 - INFO - Writing UFF SDF for CHEMBL5794260: 44 atoms → temp_isolation_work_4f65/L038/uff/L038_uff.sdf
+2026-01-16 15:52:35,070 - INFO - [CHEMBL5794260] >>> Start Stage: Energy Prediction
+2026-01-16 15:52:41,301 - ERROR - CMD ERROR: python inference.py -test_csv temp_isolation_work_4f65/L038/L038_input.csv -work_path temp_isolation_work_4f65/L038 -ensemble checkpoints/v0.2_energy_model -gpus 1 -batch_size 1 -posfix *val_loss* -energy_output_folder temp_isolation_work_4f65/L038 -uff_as_ligand -debug -reload
+STDERR: ...File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:52:41,301 - ERROR - [CHEMBL5794260] FAILED at stage Energy Prediction: Exit code 1 | File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:52:41,314 - INFO - [CHEMBL5929091] Processing in temp_isolation_work_4f65/L039...
+2026-01-16 15:52:41,314 - INFO - [CHEMBL5929091] >>> Start Stage: Setup
+2026-01-16 15:52:41,322 - INFO - Writing UFF SDF for CHEMBL5929091: 48 atoms → temp_isolation_work_4f65/L039/uff/L039_uff.sdf
+2026-01-16 15:52:41,325 - INFO - [CHEMBL5929091] >>> Start Stage: Energy Prediction
+2026-01-16 15:52:47,942 - ERROR - CMD ERROR: python inference.py -test_csv temp_isolation_work_4f65/L039/L039_input.csv -work_path temp_isolation_work_4f65/L039 -ensemble checkpoints/v0.2_energy_model -gpus 1 -batch_size 1 -posfix *val_loss* -energy_output_folder temp_isolation_work_4f65/L039 -uff_as_ligand -debug -reload
+STDERR: ...File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:52:47,942 - ERROR - [CHEMBL5929091] FAILED at stage Energy Prediction: Exit code 1 | File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:52:47,958 - INFO - [CHEMBL6026951] Processing in temp_isolation_work_4f65/L040...
+2026-01-16 15:52:47,958 - INFO - [CHEMBL6026951] >>> Start Stage: Setup
+2026-01-16 15:52:47,966 - INFO - Writing UFF SDF for CHEMBL6026951: 40 atoms → temp_isolation_work_4f65/L040/uff/L040_uff.sdf
+2026-01-16 15:52:47,968 - INFO - [CHEMBL6026951] >>> Start Stage: Energy Prediction
+2026-01-16 15:52:53,182 - ERROR - CMD ERROR: python inference.py -test_csv temp_isolation_work_4f65/L040/L040_input.csv -work_path temp_isolation_work_4f65/L040 -ensemble checkpoints/v0.2_energy_model -gpus 1 -batch_size 1 -posfix *val_loss* -energy_output_folder temp_isolation_work_4f65/L040 -uff_as_ligand -debug -reload
+STDERR: ...File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:52:53,182 - ERROR - [CHEMBL6026951] FAILED at stage Energy Prediction: Exit code 1 | File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:52:53,197 - INFO - [CHEMBL5907596] Processing in temp_isolation_work_4f65/L041...
+2026-01-16 15:52:53,198 - INFO - [CHEMBL5907596] >>> Start Stage: Setup
+2026-01-16 15:52:53,205 - INFO - Writing UFF SDF for CHEMBL5907596: 42 atoms → temp_isolation_work_4f65/L041/uff/L041_uff.sdf
+2026-01-16 15:52:53,208 - INFO - [CHEMBL5907596] >>> Start Stage: Energy Prediction
+2026-01-16 15:52:58,346 - ERROR - CMD ERROR: python inference.py -test_csv temp_isolation_work_4f65/L041/L041_input.csv -work_path temp_isolation_work_4f65/L041 -ensemble checkpoints/v0.2_energy_model -gpus 1 -batch_size 1 -posfix *val_loss* -energy_output_folder temp_isolation_work_4f65/L041 -uff_as_ligand -debug -reload
+STDERR: ...File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:52:58,346 - ERROR - [CHEMBL5907596] FAILED at stage Energy Prediction: Exit code 1 | File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:52:58,359 - INFO - [CHEMBL5915626] Processing in temp_isolation_work_4f65/L042...
+2026-01-16 15:52:58,359 - INFO - [CHEMBL5915626] >>> Start Stage: Setup
+2026-01-16 15:52:58,367 - INFO - Writing UFF SDF for CHEMBL5915626: 39 atoms → temp_isolation_work_4f65/L042/uff/L042_uff.sdf
+2026-01-16 15:52:58,369 - INFO - [CHEMBL5915626] >>> Start Stage: Energy Prediction
+2026-01-16 15:53:03,541 - ERROR - CMD ERROR: python inference.py -test_csv temp_isolation_work_4f65/L042/L042_input.csv -work_path temp_isolation_work_4f65/L042 -ensemble checkpoints/v0.2_energy_model -gpus 1 -batch_size 1 -posfix *val_loss* -energy_output_folder temp_isolation_work_4f65/L042 -uff_as_ligand -debug -reload
+STDERR: ...File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:53:03,542 - ERROR - [CHEMBL5915626] FAILED at stage Energy Prediction: Exit code 1 | File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:53:03,558 - INFO - [CHEMBL5770010] Processing in temp_isolation_work_4f65/L043...
+2026-01-16 15:53:03,558 - INFO - [CHEMBL5770010] >>> Start Stage: Setup
+2026-01-16 15:53:03,566 - INFO - Writing UFF SDF for CHEMBL5770010: 41 atoms → temp_isolation_work_4f65/L043/uff/L043_uff.sdf
+2026-01-16 15:53:03,569 - INFO - [CHEMBL5770010] >>> Start Stage: Energy Prediction
+2026-01-16 15:53:08,649 - ERROR - CMD ERROR: python inference.py -test_csv temp_isolation_work_4f65/L043/L043_input.csv -work_path temp_isolation_work_4f65/L043 -ensemble checkpoints/v0.2_energy_model -gpus 1 -batch_size 1 -posfix *val_loss* -energy_output_folder temp_isolation_work_4f65/L043 -uff_as_ligand -debug -reload
+STDERR: ...File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:53:08,649 - ERROR - [CHEMBL5770010] FAILED at stage Energy Prediction: Exit code 1 | File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:53:08,665 - INFO - [CHEMBL5782903] Processing in temp_isolation_work_4f65/L044...
+2026-01-16 15:53:08,666 - INFO - [CHEMBL5782903] >>> Start Stage: Setup
+2026-01-16 15:53:08,674 - INFO - Writing UFF SDF for CHEMBL5782903: 42 atoms → temp_isolation_work_4f65/L044/uff/L044_uff.sdf
+2026-01-16 15:53:08,677 - INFO - [CHEMBL5782903] >>> Start Stage: Energy Prediction
+2026-01-16 15:53:13,834 - ERROR - CMD ERROR: python inference.py -test_csv temp_isolation_work_4f65/L044/L044_input.csv -work_path temp_isolation_work_4f65/L044 -ensemble checkpoints/v0.2_energy_model -gpus 1 -batch_size 1 -posfix *val_loss* -energy_output_folder temp_isolation_work_4f65/L044 -uff_as_ligand -debug -reload
+STDERR: ...File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:53:13,834 - ERROR - [CHEMBL5782903] FAILED at stage Energy Prediction: Exit code 1 | File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:53:13,847 - INFO - [CHEMBL5785162] Processing in temp_isolation_work_4f65/L045...
+2026-01-16 15:53:13,847 - INFO - [CHEMBL5785162] >>> Start Stage: Setup
+2026-01-16 15:53:13,855 - INFO - Writing UFF SDF for CHEMBL5785162: 44 atoms → temp_isolation_work_4f65/L045/uff/L045_uff.sdf
+2026-01-16 15:53:13,858 - INFO - [CHEMBL5785162] >>> Start Stage: Energy Prediction
+2026-01-16 15:53:18,957 - ERROR - CMD ERROR: python inference.py -test_csv temp_isolation_work_4f65/L045/L045_input.csv -work_path temp_isolation_work_4f65/L045 -ensemble checkpoints/v0.2_energy_model -gpus 1 -batch_size 1 -posfix *val_loss* -energy_output_folder temp_isolation_work_4f65/L045 -uff_as_ligand -debug -reload
+STDERR: ...File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:53:18,957 - ERROR - [CHEMBL5785162] FAILED at stage Energy Prediction: Exit code 1 | File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:53:18,973 - INFO - [CHEMBL5771017] Processing in temp_isolation_work_4f65/L046...
+2026-01-16 15:53:18,973 - INFO - [CHEMBL5771017] >>> Start Stage: Setup
+2026-01-16 15:53:18,981 - INFO - Writing UFF SDF for CHEMBL5771017: 40 atoms → temp_isolation_work_4f65/L046/uff/L046_uff.sdf
+2026-01-16 15:53:18,984 - INFO - [CHEMBL5771017] >>> Start Stage: Energy Prediction
+2026-01-16 15:53:24,237 - ERROR - CMD ERROR: python inference.py -test_csv temp_isolation_work_4f65/L046/L046_input.csv -work_path temp_isolation_work_4f65/L046 -ensemble checkpoints/v0.2_energy_model -gpus 1 -batch_size 1 -posfix *val_loss* -energy_output_folder temp_isolation_work_4f65/L046 -uff_as_ligand -debug -reload
+STDERR: ...File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:53:24,237 - ERROR - [CHEMBL5771017] FAILED at stage Energy Prediction: Exit code 1 | File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:53:24,251 - INFO - [CHEMBL5880580] Processing in temp_isolation_work_4f65/L047...
+2026-01-16 15:53:24,251 - INFO - [CHEMBL5880580] >>> Start Stage: Setup
+2026-01-16 15:53:24,258 - INFO - Writing UFF SDF for CHEMBL5880580: 42 atoms → temp_isolation_work_4f65/L047/uff/L047_uff.sdf
+2026-01-16 15:53:24,261 - INFO - [CHEMBL5880580] >>> Start Stage: Energy Prediction
+2026-01-16 15:53:29,627 - ERROR - CMD ERROR: python inference.py -test_csv temp_isolation_work_4f65/L047/L047_input.csv -work_path temp_isolation_work_4f65/L047 -ensemble checkpoints/v0.2_energy_model -gpus 1 -batch_size 1 -posfix *val_loss* -energy_output_folder temp_isolation_work_4f65/L047 -uff_as_ligand -debug -reload
+STDERR: ...File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:53:29,627 - ERROR - [CHEMBL5880580] FAILED at stage Energy Prediction: Exit code 1 | File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:53:29,641 - INFO - [CHEMBL6028974] Processing in temp_isolation_work_4f65/L048...
+2026-01-16 15:53:29,642 - INFO - [CHEMBL6028974] >>> Start Stage: Setup
+2026-01-16 15:53:29,650 - INFO - Writing UFF SDF for CHEMBL6028974: 40 atoms → temp_isolation_work_4f65/L048/uff/L048_uff.sdf
+2026-01-16 15:53:29,652 - INFO - [CHEMBL6028974] >>> Start Stage: Energy Prediction
+2026-01-16 15:53:34,804 - ERROR - CMD ERROR: python inference.py -test_csv temp_isolation_work_4f65/L048/L048_input.csv -work_path temp_isolation_work_4f65/L048 -ensemble checkpoints/v0.2_energy_model -gpus 1 -batch_size 1 -posfix *val_loss* -energy_output_folder temp_isolation_work_4f65/L048 -uff_as_ligand -debug -reload
+STDERR: ...File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:53:34,804 - ERROR - [CHEMBL6028974] FAILED at stage Energy Prediction: Exit code 1 | File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:53:34,820 - INFO - [CHEMBL5897053] Processing in temp_isolation_work_4f65/L049...
+2026-01-16 15:53:34,820 - INFO - [CHEMBL5897053] >>> Start Stage: Setup
+2026-01-16 15:53:34,828 - INFO - Writing UFF SDF for CHEMBL5897053: 42 atoms → temp_isolation_work_4f65/L049/uff/L049_uff.sdf
+2026-01-16 15:53:34,831 - INFO - [CHEMBL5897053] >>> Start Stage: Energy Prediction
+2026-01-16 15:53:39,911 - ERROR - CMD ERROR: python inference.py -test_csv temp_isolation_work_4f65/L049/L049_input.csv -work_path temp_isolation_work_4f65/L049 -ensemble checkpoints/v0.2_energy_model -gpus 1 -batch_size 1 -posfix *val_loss* -energy_output_folder temp_isolation_work_4f65/L049 -uff_as_ligand -debug -reload
+STDERR: ...File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:53:39,912 - ERROR - [CHEMBL5897053] FAILED at stage Energy Prediction: Exit code 1 | File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:53:39,926 - INFO - [CHEMBL5983117] Processing in temp_isolation_work_4f65/L050...
+2026-01-16 15:53:39,926 - INFO - [CHEMBL5983117] >>> Start Stage: Setup
+2026-01-16 15:53:39,933 - INFO - Writing UFF SDF for CHEMBL5983117: 43 atoms → temp_isolation_work_4f65/L050/uff/L050_uff.sdf
+2026-01-16 15:53:39,936 - INFO - [CHEMBL5983117] >>> Start Stage: Energy Prediction
+2026-01-16 15:53:45,147 - ERROR - CMD ERROR: python inference.py -test_csv temp_isolation_work_4f65/L050/L050_input.csv -work_path temp_isolation_work_4f65/L050 -ensemble checkpoints/v0.2_energy_model -gpus 1 -batch_size 1 -posfix *val_loss* -energy_output_folder temp_isolation_work_4f65/L050 -uff_as_ligand -debug -reload
+STDERR: ...File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:53:45,148 - ERROR - [CHEMBL5983117] FAILED at stage Energy Prediction: Exit code 1 | File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:53:45,160 - INFO - [CHEMBL5967591] Processing in temp_isolation_work_4f65/L051...
+2026-01-16 15:53:45,161 - INFO - [CHEMBL5967591] >>> Start Stage: Setup
+2026-01-16 15:53:45,168 - INFO - Writing UFF SDF for CHEMBL5967591: 38 atoms → temp_isolation_work_4f65/L051/uff/L051_uff.sdf
+2026-01-16 15:53:45,171 - INFO - [CHEMBL5967591] >>> Start Stage: Energy Prediction
+2026-01-16 15:53:50,354 - ERROR - CMD ERROR: python inference.py -test_csv temp_isolation_work_4f65/L051/L051_input.csv -work_path temp_isolation_work_4f65/L051 -ensemble checkpoints/v0.2_energy_model -gpus 1 -batch_size 1 -posfix *val_loss* -energy_output_folder temp_isolation_work_4f65/L051 -uff_as_ligand -debug -reload
+STDERR: ...File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:53:50,355 - ERROR - [CHEMBL5967591] FAILED at stage Energy Prediction: Exit code 1 | File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:53:50,368 - INFO - [CHEMBL6018088] Processing in temp_isolation_work_4f65/L052...
+2026-01-16 15:53:50,368 - INFO - [CHEMBL6018088] >>> Start Stage: Setup
+2026-01-16 15:53:50,375 - INFO - Writing UFF SDF for CHEMBL6018088: 42 atoms → temp_isolation_work_4f65/L052/uff/L052_uff.sdf
+2026-01-16 15:53:50,378 - INFO - [CHEMBL6018088] >>> Start Stage: Energy Prediction
+2026-01-16 15:53:55,530 - ERROR - CMD ERROR: python inference.py -test_csv temp_isolation_work_4f65/L052/L052_input.csv -work_path temp_isolation_work_4f65/L052 -ensemble checkpoints/v0.2_energy_model -gpus 1 -batch_size 1 -posfix *val_loss* -energy_output_folder temp_isolation_work_4f65/L052 -uff_as_ligand -debug -reload
+STDERR: ...File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:53:55,531 - ERROR - [CHEMBL6018088] FAILED at stage Energy Prediction: Exit code 1 | File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:53:55,545 - INFO - [CHEMBL5950967] Processing in temp_isolation_work_4f65/L053...
+2026-01-16 15:53:55,545 - INFO - [CHEMBL5950967] >>> Start Stage: Setup
+2026-01-16 15:53:55,552 - INFO - Writing UFF SDF for CHEMBL5950967: 41 atoms → temp_isolation_work_4f65/L053/uff/L053_uff.sdf
+2026-01-16 15:53:55,555 - INFO - [CHEMBL5950967] >>> Start Stage: Energy Prediction
+2026-01-16 15:54:00,607 - ERROR - CMD ERROR: python inference.py -test_csv temp_isolation_work_4f65/L053/L053_input.csv -work_path temp_isolation_work_4f65/L053 -ensemble checkpoints/v0.2_energy_model -gpus 1 -batch_size 1 -posfix *val_loss* -energy_output_folder temp_isolation_work_4f65/L053 -uff_as_ligand -debug -reload
+STDERR: ...File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:54:00,608 - ERROR - [CHEMBL5950967] FAILED at stage Energy Prediction: Exit code 1 | File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:54:00,623 - INFO - [CHEMBL5780945] Processing in temp_isolation_work_4f65/L054...
+2026-01-16 15:54:00,623 - INFO - [CHEMBL5780945] >>> Start Stage: Setup
+2026-01-16 15:54:00,631 - INFO - Writing UFF SDF for CHEMBL5780945: 37 atoms → temp_isolation_work_4f65/L054/uff/L054_uff.sdf
+2026-01-16 15:54:00,634 - INFO - [CHEMBL5780945] >>> Start Stage: Energy Prediction
+2026-01-16 15:54:05,682 - ERROR - CMD ERROR: python inference.py -test_csv temp_isolation_work_4f65/L054/L054_input.csv -work_path temp_isolation_work_4f65/L054 -ensemble checkpoints/v0.2_energy_model -gpus 1 -batch_size 1 -posfix *val_loss* -energy_output_folder temp_isolation_work_4f65/L054 -uff_as_ligand -debug -reload
+STDERR: ...File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:54:05,682 - ERROR - [CHEMBL5780945] FAILED at stage Energy Prediction: Exit code 1 | File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:54:05,697 - INFO - [CHEMBL5824959] Processing in temp_isolation_work_4f65/L055...
+2026-01-16 15:54:05,697 - INFO - [CHEMBL5824959] >>> Start Stage: Setup
+2026-01-16 15:54:05,705 - INFO - Writing UFF SDF for CHEMBL5824959: 39 atoms → temp_isolation_work_4f65/L055/uff/L055_uff.sdf
+2026-01-16 15:54:05,707 - INFO - [CHEMBL5824959] >>> Start Stage: Energy Prediction
+2026-01-16 15:54:10,747 - ERROR - CMD ERROR: python inference.py -test_csv temp_isolation_work_4f65/L055/L055_input.csv -work_path temp_isolation_work_4f65/L055 -ensemble checkpoints/v0.2_energy_model -gpus 1 -batch_size 1 -posfix *val_loss* -energy_output_folder temp_isolation_work_4f65/L055 -uff_as_ligand -debug -reload
+STDERR: ...File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:54:10,747 - ERROR - [CHEMBL5824959] FAILED at stage Energy Prediction: Exit code 1 | File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:54:10,761 - INFO - [CHEMBL5920854] Processing in temp_isolation_work_4f65/L056...
+2026-01-16 15:54:10,761 - INFO - [CHEMBL5920854] >>> Start Stage: Setup
+2026-01-16 15:54:10,769 - INFO - Writing UFF SDF for CHEMBL5920854: 42 atoms → temp_isolation_work_4f65/L056/uff/L056_uff.sdf
+2026-01-16 15:54:10,772 - INFO - [CHEMBL5920854] >>> Start Stage: Energy Prediction
+2026-01-16 15:54:15,919 - ERROR - CMD ERROR: python inference.py -test_csv temp_isolation_work_4f65/L056/L056_input.csv -work_path temp_isolation_work_4f65/L056 -ensemble checkpoints/v0.2_energy_model -gpus 1 -batch_size 1 -posfix *val_loss* -energy_output_folder temp_isolation_work_4f65/L056 -uff_as_ligand -debug -reload
+STDERR: ...File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:54:15,920 - ERROR - [CHEMBL5920854] FAILED at stage Energy Prediction: Exit code 1 | File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:54:15,936 - INFO - [CHEMBL5742315] Processing in temp_isolation_work_4f65/L057...
+2026-01-16 15:54:15,936 - INFO - [CHEMBL5742315] >>> Start Stage: Setup
+2026-01-16 15:54:15,944 - INFO - Writing UFF SDF for CHEMBL5742315: 42 atoms → temp_isolation_work_4f65/L057/uff/L057_uff.sdf
+2026-01-16 15:54:15,947 - INFO - [CHEMBL5742315] >>> Start Stage: Energy Prediction
+2026-01-16 15:54:21,105 - ERROR - CMD ERROR: python inference.py -test_csv temp_isolation_work_4f65/L057/L057_input.csv -work_path temp_isolation_work_4f65/L057 -ensemble checkpoints/v0.2_energy_model -gpus 1 -batch_size 1 -posfix *val_loss* -energy_output_folder temp_isolation_work_4f65/L057 -uff_as_ligand -debug -reload
+STDERR: ...File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:54:21,106 - ERROR - [CHEMBL5742315] FAILED at stage Energy Prediction: Exit code 1 | File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:54:21,121 - INFO - [CHEMBL6056846] Processing in temp_isolation_work_4f65/L058...
+2026-01-16 15:54:21,122 - INFO - [CHEMBL6056846] >>> Start Stage: Setup
+2026-01-16 15:54:21,130 - INFO - Writing UFF SDF for CHEMBL6056846: 41 atoms → temp_isolation_work_4f65/L058/uff/L058_uff.sdf
+2026-01-16 15:54:21,132 - INFO - [CHEMBL6056846] >>> Start Stage: Energy Prediction
+2026-01-16 15:54:26,401 - ERROR - CMD ERROR: python inference.py -test_csv temp_isolation_work_4f65/L058/L058_input.csv -work_path temp_isolation_work_4f65/L058 -ensemble checkpoints/v0.2_energy_model -gpus 1 -batch_size 1 -posfix *val_loss* -energy_output_folder temp_isolation_work_4f65/L058 -uff_as_ligand -debug -reload
+STDERR: ...File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:54:26,401 - ERROR - [CHEMBL6056846] FAILED at stage Energy Prediction: Exit code 1 | File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:54:26,415 - INFO - [CHEMBL5770439] Processing in temp_isolation_work_4f65/L059...
+2026-01-16 15:54:26,416 - INFO - [CHEMBL5770439] >>> Start Stage: Setup
+2026-01-16 15:54:26,423 - INFO - Writing UFF SDF for CHEMBL5770439: 43 atoms → temp_isolation_work_4f65/L059/uff/L059_uff.sdf
+2026-01-16 15:54:26,426 - INFO - [CHEMBL5770439] >>> Start Stage: Energy Prediction
+2026-01-16 15:54:31,949 - ERROR - CMD ERROR: python inference.py -test_csv temp_isolation_work_4f65/L059/L059_input.csv -work_path temp_isolation_work_4f65/L059 -ensemble checkpoints/v0.2_energy_model -gpus 1 -batch_size 1 -posfix *val_loss* -energy_output_folder temp_isolation_work_4f65/L059 -uff_as_ligand -debug -reload
+STDERR: ...File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:54:31,949 - ERROR - [CHEMBL5770439] FAILED at stage Energy Prediction: Exit code 1 | File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:54:31,965 - INFO - [CHEMBL6011659] Processing in temp_isolation_work_4f65/L060...
+2026-01-16 15:54:31,965 - INFO - [CHEMBL6011659] >>> Start Stage: Setup
+2026-01-16 15:54:31,972 - INFO - Writing UFF SDF for CHEMBL6011659: 41 atoms → temp_isolation_work_4f65/L060/uff/L060_uff.sdf
+2026-01-16 15:54:31,975 - INFO - [CHEMBL6011659] >>> Start Stage: Energy Prediction
+2026-01-16 15:54:37,092 - ERROR - CMD ERROR: python inference.py -test_csv temp_isolation_work_4f65/L060/L060_input.csv -work_path temp_isolation_work_4f65/L060 -ensemble checkpoints/v0.2_energy_model -gpus 1 -batch_size 1 -posfix *val_loss* -energy_output_folder temp_isolation_work_4f65/L060 -uff_as_ligand -debug -reload
+STDERR: ...File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:54:37,092 - ERROR - [CHEMBL6011659] FAILED at stage Energy Prediction: Exit code 1 | File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:54:37,105 - INFO - [CHEMBL5950008] Processing in temp_isolation_work_4f65/L061...
+2026-01-16 15:54:37,105 - INFO - [CHEMBL5950008] >>> Start Stage: Setup
+2026-01-16 15:54:37,112 - INFO - Writing UFF SDF for CHEMBL5950008: 44 atoms → temp_isolation_work_4f65/L061/uff/L061_uff.sdf
+2026-01-16 15:54:37,115 - INFO - [CHEMBL5950008] >>> Start Stage: Energy Prediction
+2026-01-16 15:54:42,317 - ERROR - CMD ERROR: python inference.py -test_csv temp_isolation_work_4f65/L061/L061_input.csv -work_path temp_isolation_work_4f65/L061 -ensemble checkpoints/v0.2_energy_model -gpus 1 -batch_size 1 -posfix *val_loss* -energy_output_folder temp_isolation_work_4f65/L061 -uff_as_ligand -debug -reload
+STDERR: ...File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:54:42,317 - ERROR - [CHEMBL5950008] FAILED at stage Energy Prediction: Exit code 1 | File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:54:42,334 - INFO - [CHEMBL6033462] Processing in temp_isolation_work_4f65/L062...
+2026-01-16 15:54:42,334 - INFO - [CHEMBL6033462] >>> Start Stage: Setup
+2026-01-16 15:54:42,343 - INFO - Writing UFF SDF for CHEMBL6033462: 42 atoms → temp_isolation_work_4f65/L062/uff/L062_uff.sdf
+2026-01-16 15:54:42,346 - INFO - [CHEMBL6033462] >>> Start Stage: Energy Prediction
+2026-01-16 15:54:47,466 - ERROR - CMD ERROR: python inference.py -test_csv temp_isolation_work_4f65/L062/L062_input.csv -work_path temp_isolation_work_4f65/L062 -ensemble checkpoints/v0.2_energy_model -gpus 1 -batch_size 1 -posfix *val_loss* -energy_output_folder temp_isolation_work_4f65/L062 -uff_as_ligand -debug -reload
+STDERR: ...File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:54:47,467 - ERROR - [CHEMBL6033462] FAILED at stage Energy Prediction: Exit code 1 | File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:54:47,480 - INFO - [CHEMBL5901005] Processing in temp_isolation_work_4f65/L063...
+2026-01-16 15:54:47,480 - INFO - [CHEMBL5901005] >>> Start Stage: Setup
+2026-01-16 15:54:47,488 - INFO - Writing UFF SDF for CHEMBL5901005: 42 atoms → temp_isolation_work_4f65/L063/uff/L063_uff.sdf
+2026-01-16 15:54:47,490 - INFO - [CHEMBL5901005] >>> Start Stage: Energy Prediction
+2026-01-16 15:54:52,750 - ERROR - CMD ERROR: python inference.py -test_csv temp_isolation_work_4f65/L063/L063_input.csv -work_path temp_isolation_work_4f65/L063 -ensemble checkpoints/v0.2_energy_model -gpus 1 -batch_size 1 -posfix *val_loss* -energy_output_folder temp_isolation_work_4f65/L063 -uff_as_ligand -debug -reload
+STDERR: ...File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:54:52,750 - ERROR - [CHEMBL5901005] FAILED at stage Energy Prediction: Exit code 1 | File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:54:52,765 - INFO - [CHEMBL5969055] Processing in temp_isolation_work_4f65/L064...
+2026-01-16 15:54:52,765 - INFO - [CHEMBL5969055] >>> Start Stage: Setup
+2026-01-16 15:54:52,772 - INFO - Writing UFF SDF for CHEMBL5969055: 43 atoms → temp_isolation_work_4f65/L064/uff/L064_uff.sdf
+2026-01-16 15:54:52,775 - INFO - [CHEMBL5969055] >>> Start Stage: Energy Prediction
+2026-01-16 15:54:58,031 - ERROR - CMD ERROR: python inference.py -test_csv temp_isolation_work_4f65/L064/L064_input.csv -work_path temp_isolation_work_4f65/L064 -ensemble checkpoints/v0.2_energy_model -gpus 1 -batch_size 1 -posfix *val_loss* -energy_output_folder temp_isolation_work_4f65/L064 -uff_as_ligand -debug -reload
+STDERR: ...File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:54:58,032 - ERROR - [CHEMBL5969055] FAILED at stage Energy Prediction: Exit code 1 | File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:54:58,048 - INFO - [CHEMBL6058213] Processing in temp_isolation_work_4f65/L065...
+2026-01-16 15:54:58,048 - INFO - [CHEMBL6058213] >>> Start Stage: Setup
+2026-01-16 15:54:58,055 - INFO - Writing UFF SDF for CHEMBL6058213: 41 atoms → temp_isolation_work_4f65/L065/uff/L065_uff.sdf
+2026-01-16 15:54:58,058 - INFO - [CHEMBL6058213] >>> Start Stage: Energy Prediction
+2026-01-16 15:55:03,103 - ERROR - CMD ERROR: python inference.py -test_csv temp_isolation_work_4f65/L065/L065_input.csv -work_path temp_isolation_work_4f65/L065 -ensemble checkpoints/v0.2_energy_model -gpus 1 -batch_size 1 -posfix *val_loss* -energy_output_folder temp_isolation_work_4f65/L065 -uff_as_ligand -debug -reload
+STDERR: ...File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:55:03,104 - ERROR - [CHEMBL6058213] FAILED at stage Energy Prediction: Exit code 1 | File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:55:03,119 - INFO - [CHEMBL5912525] Processing in temp_isolation_work_4f65/L066...
+2026-01-16 15:55:03,119 - INFO - [CHEMBL5912525] >>> Start Stage: Setup
+2026-01-16 15:55:03,127 - INFO - Writing UFF SDF for CHEMBL5912525: 44 atoms → temp_isolation_work_4f65/L066/uff/L066_uff.sdf
+2026-01-16 15:55:03,130 - INFO - [CHEMBL5912525] >>> Start Stage: Energy Prediction
+2026-01-16 15:55:08,181 - ERROR - CMD ERROR: python inference.py -test_csv temp_isolation_work_4f65/L066/L066_input.csv -work_path temp_isolation_work_4f65/L066 -ensemble checkpoints/v0.2_energy_model -gpus 1 -batch_size 1 -posfix *val_loss* -energy_output_folder temp_isolation_work_4f65/L066 -uff_as_ligand -debug -reload
+STDERR: ...File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:55:08,181 - ERROR - [CHEMBL5912525] FAILED at stage Energy Prediction: Exit code 1 | File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:55:08,195 - INFO - [CHEMBL5798568] Processing in temp_isolation_work_4f65/L067...
+2026-01-16 15:55:08,195 - INFO - [CHEMBL5798568] >>> Start Stage: Setup
+2026-01-16 15:55:08,203 - INFO - Writing UFF SDF for CHEMBL5798568: 42 atoms → temp_isolation_work_4f65/L067/uff/L067_uff.sdf
+2026-01-16 15:55:08,205 - INFO - [CHEMBL5798568] >>> Start Stage: Energy Prediction
+2026-01-16 15:55:13,315 - ERROR - CMD ERROR: python inference.py -test_csv temp_isolation_work_4f65/L067/L067_input.csv -work_path temp_isolation_work_4f65/L067 -ensemble checkpoints/v0.2_energy_model -gpus 1 -batch_size 1 -posfix *val_loss* -energy_output_folder temp_isolation_work_4f65/L067 -uff_as_ligand -debug -reload
+STDERR: ...File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:55:13,315 - ERROR - [CHEMBL5798568] FAILED at stage Energy Prediction: Exit code 1 | File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:55:13,329 - INFO - [CHEMBL5851926] Processing in temp_isolation_work_4f65/L068...
+2026-01-16 15:55:13,329 - INFO - [CHEMBL5851926] >>> Start Stage: Setup
+2026-01-16 15:55:13,336 - INFO - Writing UFF SDF for CHEMBL5851926: 41 atoms → temp_isolation_work_4f65/L068/uff/L068_uff.sdf
+2026-01-16 15:55:13,339 - INFO - [CHEMBL5851926] >>> Start Stage: Energy Prediction
+2026-01-16 15:55:18,453 - ERROR - CMD ERROR: python inference.py -test_csv temp_isolation_work_4f65/L068/L068_input.csv -work_path temp_isolation_work_4f65/L068 -ensemble checkpoints/v0.2_energy_model -gpus 1 -batch_size 1 -posfix *val_loss* -energy_output_folder temp_isolation_work_4f65/L068 -uff_as_ligand -debug -reload
+STDERR: ...File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:55:18,453 - ERROR - [CHEMBL5851926] FAILED at stage Energy Prediction: Exit code 1 | File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:55:18,466 - INFO - [CHEMBL6024138] Processing in temp_isolation_work_4f65/L069...
+2026-01-16 15:55:18,467 - INFO - [CHEMBL6024138] >>> Start Stage: Setup
+2026-01-16 15:55:18,474 - INFO - Writing UFF SDF for CHEMBL6024138: 42 atoms → temp_isolation_work_4f65/L069/uff/L069_uff.sdf
+2026-01-16 15:55:18,477 - INFO - [CHEMBL6024138] >>> Start Stage: Energy Prediction
+2026-01-16 15:55:23,572 - ERROR - CMD ERROR: python inference.py -test_csv temp_isolation_work_4f65/L069/L069_input.csv -work_path temp_isolation_work_4f65/L069 -ensemble checkpoints/v0.2_energy_model -gpus 1 -batch_size 1 -posfix *val_loss* -energy_output_folder temp_isolation_work_4f65/L069 -uff_as_ligand -debug -reload
+STDERR: ...File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:55:23,572 - ERROR - [CHEMBL6024138] FAILED at stage Energy Prediction: Exit code 1 | File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:55:23,586 - INFO - [CHEMBL5917385] Processing in temp_isolation_work_4f65/L070...
+2026-01-16 15:55:23,586 - INFO - [CHEMBL5917385] >>> Start Stage: Setup
+2026-01-16 15:55:23,593 - INFO - Writing UFF SDF for CHEMBL5917385: 42 atoms → temp_isolation_work_4f65/L070/uff/L070_uff.sdf
+2026-01-16 15:55:23,596 - INFO - [CHEMBL5917385] >>> Start Stage: Energy Prediction
+2026-01-16 15:55:28,695 - ERROR - CMD ERROR: python inference.py -test_csv temp_isolation_work_4f65/L070/L070_input.csv -work_path temp_isolation_work_4f65/L070 -ensemble checkpoints/v0.2_energy_model -gpus 1 -batch_size 1 -posfix *val_loss* -energy_output_folder temp_isolation_work_4f65/L070 -uff_as_ligand -debug -reload
+STDERR: ...File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:55:28,695 - ERROR - [CHEMBL5917385] FAILED at stage Energy Prediction: Exit code 1 | File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:55:28,709 - INFO - [CHEMBL5975423] Processing in temp_isolation_work_4f65/L071...
+2026-01-16 15:55:28,709 - INFO - [CHEMBL5975423] >>> Start Stage: Setup
+2026-01-16 15:55:28,716 - INFO - Writing UFF SDF for CHEMBL5975423: 41 atoms → temp_isolation_work_4f65/L071/uff/L071_uff.sdf
+2026-01-16 15:55:28,719 - INFO - [CHEMBL5975423] >>> Start Stage: Energy Prediction
+2026-01-16 15:55:34,141 - ERROR - CMD ERROR: python inference.py -test_csv temp_isolation_work_4f65/L071/L071_input.csv -work_path temp_isolation_work_4f65/L071 -ensemble checkpoints/v0.2_energy_model -gpus 1 -batch_size 1 -posfix *val_loss* -energy_output_folder temp_isolation_work_4f65/L071 -uff_as_ligand -debug -reload
+STDERR: ...File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:55:34,141 - ERROR - [CHEMBL5975423] FAILED at stage Energy Prediction: Exit code 1 | File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:55:34,159 - INFO - [CHEMBL5909180] Processing in temp_isolation_work_4f65/L072...
+2026-01-16 15:55:34,159 - INFO - [CHEMBL5909180] >>> Start Stage: Setup
+2026-01-16 15:55:34,168 - INFO - Writing UFF SDF for CHEMBL5909180: 40 atoms → temp_isolation_work_4f65/L072/uff/L072_uff.sdf
+2026-01-16 15:55:34,171 - INFO - [CHEMBL5909180] >>> Start Stage: Energy Prediction
+2026-01-16 15:55:39,248 - ERROR - CMD ERROR: python inference.py -test_csv temp_isolation_work_4f65/L072/L072_input.csv -work_path temp_isolation_work_4f65/L072 -ensemble checkpoints/v0.2_energy_model -gpus 1 -batch_size 1 -posfix *val_loss* -energy_output_folder temp_isolation_work_4f65/L072 -uff_as_ligand -debug -reload
+STDERR: ...File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:55:39,248 - ERROR - [CHEMBL5909180] FAILED at stage Energy Prediction: Exit code 1 | File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:55:39,259 - INFO - [CHEMBL5971350] Processing in temp_isolation_work_4f65/L073...
+2026-01-16 15:55:39,259 - INFO - [CHEMBL5971350] >>> Start Stage: Setup
+2026-01-16 15:55:39,266 - INFO - Writing UFF SDF for CHEMBL5971350: 40 atoms → temp_isolation_work_4f65/L073/uff/L073_uff.sdf
+2026-01-16 15:55:39,268 - INFO - [CHEMBL5971350] >>> Start Stage: Energy Prediction
+2026-01-16 15:55:44,585 - ERROR - CMD ERROR: python inference.py -test_csv temp_isolation_work_4f65/L073/L073_input.csv -work_path temp_isolation_work_4f65/L073 -ensemble checkpoints/v0.2_energy_model -gpus 1 -batch_size 1 -posfix *val_loss* -energy_output_folder temp_isolation_work_4f65/L073 -uff_as_ligand -debug -reload
+STDERR: ...File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:55:44,585 - ERROR - [CHEMBL5971350] FAILED at stage Energy Prediction: Exit code 1 | File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:55:44,599 - INFO - [CHEMBL5751150] Processing in temp_isolation_work_4f65/L074...
+2026-01-16 15:55:44,599 - INFO - [CHEMBL5751150] >>> Start Stage: Setup
+2026-01-16 15:55:44,607 - INFO - Writing UFF SDF for CHEMBL5751150: 39 atoms → temp_isolation_work_4f65/L074/uff/L074_uff.sdf
+2026-01-16 15:55:44,610 - INFO - [CHEMBL5751150] >>> Start Stage: Energy Prediction
+2026-01-16 15:55:49,814 - ERROR - CMD ERROR: python inference.py -test_csv temp_isolation_work_4f65/L074/L074_input.csv -work_path temp_isolation_work_4f65/L074 -ensemble checkpoints/v0.2_energy_model -gpus 1 -batch_size 1 -posfix *val_loss* -energy_output_folder temp_isolation_work_4f65/L074 -uff_as_ligand -debug -reload
+STDERR: ...File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:55:49,815 - ERROR - [CHEMBL5751150] FAILED at stage Energy Prediction: Exit code 1 | File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:55:49,830 - INFO - [CHEMBL5990882] Processing in temp_isolation_work_4f65/L075...
+2026-01-16 15:55:49,830 - INFO - [CHEMBL5990882] >>> Start Stage: Setup
+2026-01-16 15:55:49,838 - INFO - Writing UFF SDF for CHEMBL5990882: 44 atoms → temp_isolation_work_4f65/L075/uff/L075_uff.sdf
+2026-01-16 15:55:49,841 - INFO - [CHEMBL5990882] >>> Start Stage: Energy Prediction
+2026-01-16 15:55:55,060 - ERROR - CMD ERROR: python inference.py -test_csv temp_isolation_work_4f65/L075/L075_input.csv -work_path temp_isolation_work_4f65/L075 -ensemble checkpoints/v0.2_energy_model -gpus 1 -batch_size 1 -posfix *val_loss* -energy_output_folder temp_isolation_work_4f65/L075 -uff_as_ligand -debug -reload
+STDERR: ...File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:55:55,060 - ERROR - [CHEMBL5990882] FAILED at stage Energy Prediction: Exit code 1 | File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:55:55,077 - INFO - [CHEMBL5875515] Processing in temp_isolation_work_4f65/L076...
+2026-01-16 15:55:55,077 - INFO - [CHEMBL5875515] >>> Start Stage: Setup
+2026-01-16 15:55:55,086 - INFO - Writing UFF SDF for CHEMBL5875515: 42 atoms → temp_isolation_work_4f65/L076/uff/L076_uff.sdf
+2026-01-16 15:55:55,088 - INFO - [CHEMBL5875515] >>> Start Stage: Energy Prediction
+2026-01-16 15:56:00,341 - ERROR - CMD ERROR: python inference.py -test_csv temp_isolation_work_4f65/L076/L076_input.csv -work_path temp_isolation_work_4f65/L076 -ensemble checkpoints/v0.2_energy_model -gpus 1 -batch_size 1 -posfix *val_loss* -energy_output_folder temp_isolation_work_4f65/L076 -uff_as_ligand -debug -reload
+STDERR: ...File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:56:00,342 - ERROR - [CHEMBL5875515] FAILED at stage Energy Prediction: Exit code 1 | File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:56:00,359 - INFO - [CHEMBL6026268] Processing in temp_isolation_work_4f65/L077...
+2026-01-16 15:56:00,359 - INFO - [CHEMBL6026268] >>> Start Stage: Setup
+2026-01-16 15:56:00,367 - INFO - Writing UFF SDF for CHEMBL6026268: 39 atoms → temp_isolation_work_4f65/L077/uff/L077_uff.sdf
+2026-01-16 15:56:00,371 - INFO - [CHEMBL6026268] >>> Start Stage: Energy Prediction
+2026-01-16 15:56:05,618 - ERROR - CMD ERROR: python inference.py -test_csv temp_isolation_work_4f65/L077/L077_input.csv -work_path temp_isolation_work_4f65/L077 -ensemble checkpoints/v0.2_energy_model -gpus 1 -batch_size 1 -posfix *val_loss* -energy_output_folder temp_isolation_work_4f65/L077 -uff_as_ligand -debug -reload
+STDERR: ...File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:56:05,618 - ERROR - [CHEMBL6026268] FAILED at stage Energy Prediction: Exit code 1 | File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:56:05,632 - INFO - [CHEMBL6001546] Processing in temp_isolation_work_4f65/L078...
+2026-01-16 15:56:05,632 - INFO - [CHEMBL6001546] >>> Start Stage: Setup
+2026-01-16 15:56:05,639 - INFO - Writing UFF SDF for CHEMBL6001546: 38 atoms → temp_isolation_work_4f65/L078/uff/L078_uff.sdf
+2026-01-16 15:56:05,642 - INFO - [CHEMBL6001546] >>> Start Stage: Energy Prediction
+2026-01-16 15:56:10,716 - ERROR - CMD ERROR: python inference.py -test_csv temp_isolation_work_4f65/L078/L078_input.csv -work_path temp_isolation_work_4f65/L078 -ensemble checkpoints/v0.2_energy_model -gpus 1 -batch_size 1 -posfix *val_loss* -energy_output_folder temp_isolation_work_4f65/L078 -uff_as_ligand -debug -reload
+STDERR: ...File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:56:10,716 - ERROR - [CHEMBL6001546] FAILED at stage Energy Prediction: Exit code 1 | File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:56:10,733 - INFO - [CHEMBL5908371] Processing in temp_isolation_work_4f65/L079...
+2026-01-16 15:56:10,733 - INFO - [CHEMBL5908371] >>> Start Stage: Setup
+2026-01-16 15:56:10,741 - INFO - Writing UFF SDF for CHEMBL5908371: 43 atoms → temp_isolation_work_4f65/L079/uff/L079_uff.sdf
+2026-01-16 15:56:10,744 - INFO - [CHEMBL5908371] >>> Start Stage: Energy Prediction
+2026-01-16 15:56:15,963 - ERROR - CMD ERROR: python inference.py -test_csv temp_isolation_work_4f65/L079/L079_input.csv -work_path temp_isolation_work_4f65/L079 -ensemble checkpoints/v0.2_energy_model -gpus 1 -batch_size 1 -posfix *val_loss* -energy_output_folder temp_isolation_work_4f65/L079 -uff_as_ligand -debug -reload
+STDERR: ...File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:56:15,963 - ERROR - [CHEMBL5908371] FAILED at stage Energy Prediction: Exit code 1 | File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:56:15,977 - INFO - [CHEMBL5856121] Processing in temp_isolation_work_4f65/L080...
+2026-01-16 15:56:15,977 - INFO - [CHEMBL5856121] >>> Start Stage: Setup
+2026-01-16 15:56:15,984 - INFO - Writing UFF SDF for CHEMBL5856121: 44 atoms → temp_isolation_work_4f65/L080/uff/L080_uff.sdf
+2026-01-16 15:56:15,987 - INFO - [CHEMBL5856121] >>> Start Stage: Energy Prediction
+2026-01-16 15:56:21,205 - ERROR - CMD ERROR: python inference.py -test_csv temp_isolation_work_4f65/L080/L080_input.csv -work_path temp_isolation_work_4f65/L080 -ensemble checkpoints/v0.2_energy_model -gpus 1 -batch_size 1 -posfix *val_loss* -energy_output_folder temp_isolation_work_4f65/L080 -uff_as_ligand -debug -reload
+STDERR: ...File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:56:21,205 - ERROR - [CHEMBL5856121] FAILED at stage Energy Prediction: Exit code 1 | File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:56:21,221 - INFO - [CHEMBL5964158] Processing in temp_isolation_work_4f65/L081...
+2026-01-16 15:56:21,221 - INFO - [CHEMBL5964158] >>> Start Stage: Setup
+2026-01-16 15:56:21,229 - INFO - Writing UFF SDF for CHEMBL5964158: 42 atoms → temp_isolation_work_4f65/L081/uff/L081_uff.sdf
+2026-01-16 15:56:21,232 - INFO - [CHEMBL5964158] >>> Start Stage: Energy Prediction
+2026-01-16 15:56:26,549 - ERROR - CMD ERROR: python inference.py -test_csv temp_isolation_work_4f65/L081/L081_input.csv -work_path temp_isolation_work_4f65/L081 -ensemble checkpoints/v0.2_energy_model -gpus 1 -batch_size 1 -posfix *val_loss* -energy_output_folder temp_isolation_work_4f65/L081 -uff_as_ligand -debug -reload
+STDERR: ...File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:56:26,549 - ERROR - [CHEMBL5964158] FAILED at stage Energy Prediction: Exit code 1 | File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:56:26,567 - INFO - [CHEMBL5994393] Processing in temp_isolation_work_4f65/L082...
+2026-01-16 15:56:26,567 - INFO - [CHEMBL5994393] >>> Start Stage: Setup
+2026-01-16 15:56:26,575 - INFO - Writing UFF SDF for CHEMBL5994393: 43 atoms → temp_isolation_work_4f65/L082/uff/L082_uff.sdf
+2026-01-16 15:56:26,578 - INFO - [CHEMBL5994393] >>> Start Stage: Energy Prediction
+2026-01-16 15:56:31,752 - ERROR - CMD ERROR: python inference.py -test_csv temp_isolation_work_4f65/L082/L082_input.csv -work_path temp_isolation_work_4f65/L082 -ensemble checkpoints/v0.2_energy_model -gpus 1 -batch_size 1 -posfix *val_loss* -energy_output_folder temp_isolation_work_4f65/L082 -uff_as_ligand -debug -reload
+STDERR: ...File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:56:31,752 - ERROR - [CHEMBL5994393] FAILED at stage Energy Prediction: Exit code 1 | File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:56:31,766 - INFO - [CHEMBL5976539] Processing in temp_isolation_work_4f65/L083...
+2026-01-16 15:56:31,766 - INFO - [CHEMBL5976539] >>> Start Stage: Setup
+2026-01-16 15:56:31,774 - INFO - Writing UFF SDF for CHEMBL5976539: 41 atoms → temp_isolation_work_4f65/L083/uff/L083_uff.sdf
+2026-01-16 15:56:31,777 - INFO - [CHEMBL5976539] >>> Start Stage: Energy Prediction
+2026-01-16 15:56:37,219 - ERROR - CMD ERROR: python inference.py -test_csv temp_isolation_work_4f65/L083/L083_input.csv -work_path temp_isolation_work_4f65/L083 -ensemble checkpoints/v0.2_energy_model -gpus 1 -batch_size 1 -posfix *val_loss* -energy_output_folder temp_isolation_work_4f65/L083 -uff_as_ligand -debug -reload
+STDERR: ...File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:56:37,219 - ERROR - [CHEMBL5976539] FAILED at stage Energy Prediction: Exit code 1 | File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:56:37,233 - INFO - [CHEMBL5781023] Processing in temp_isolation_work_4f65/L084...
+2026-01-16 15:56:37,233 - INFO - [CHEMBL5781023] >>> Start Stage: Setup
+2026-01-16 15:56:37,240 - INFO - Writing UFF SDF for CHEMBL5781023: 43 atoms → temp_isolation_work_4f65/L084/uff/L084_uff.sdf
+2026-01-16 15:56:37,243 - INFO - [CHEMBL5781023] >>> Start Stage: Energy Prediction
+2026-01-16 15:56:42,386 - ERROR - CMD ERROR: python inference.py -test_csv temp_isolation_work_4f65/L084/L084_input.csv -work_path temp_isolation_work_4f65/L084 -ensemble checkpoints/v0.2_energy_model -gpus 1 -batch_size 1 -posfix *val_loss* -energy_output_folder temp_isolation_work_4f65/L084 -uff_as_ligand -debug -reload
+STDERR: ...File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:56:42,386 - ERROR - [CHEMBL5781023] FAILED at stage Energy Prediction: Exit code 1 | File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:56:42,399 - INFO - [CHEMBL5745191] Processing in temp_isolation_work_4f65/L085...
+2026-01-16 15:56:42,399 - INFO - [CHEMBL5745191] >>> Start Stage: Setup
+2026-01-16 15:56:42,406 - INFO - Writing UFF SDF for CHEMBL5745191: 43 atoms → temp_isolation_work_4f65/L085/uff/L085_uff.sdf
+2026-01-16 15:56:42,410 - INFO - [CHEMBL5745191] >>> Start Stage: Energy Prediction
+2026-01-16 15:56:47,529 - ERROR - CMD ERROR: python inference.py -test_csv temp_isolation_work_4f65/L085/L085_input.csv -work_path temp_isolation_work_4f65/L085 -ensemble checkpoints/v0.2_energy_model -gpus 1 -batch_size 1 -posfix *val_loss* -energy_output_folder temp_isolation_work_4f65/L085 -uff_as_ligand -debug -reload
+STDERR: ...File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:56:47,530 - ERROR - [CHEMBL5745191] FAILED at stage Energy Prediction: Exit code 1 | File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:56:47,545 - INFO - [CHEMBL5973610] Processing in temp_isolation_work_4f65/L086...
+2026-01-16 15:56:47,545 - INFO - [CHEMBL5973610] >>> Start Stage: Setup
+2026-01-16 15:56:47,554 - INFO - Writing UFF SDF for CHEMBL5973610: 42 atoms → temp_isolation_work_4f65/L086/uff/L086_uff.sdf
+2026-01-16 15:56:47,557 - INFO - [CHEMBL5973610] >>> Start Stage: Energy Prediction
+2026-01-16 15:56:52,629 - ERROR - CMD ERROR: python inference.py -test_csv temp_isolation_work_4f65/L086/L086_input.csv -work_path temp_isolation_work_4f65/L086 -ensemble checkpoints/v0.2_energy_model -gpus 1 -batch_size 1 -posfix *val_loss* -energy_output_folder temp_isolation_work_4f65/L086 -uff_as_ligand -debug -reload
+STDERR: ...File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:56:52,629 - ERROR - [CHEMBL5973610] FAILED at stage Energy Prediction: Exit code 1 | File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:56:52,643 - INFO - [CHEMBL6038195] Processing in temp_isolation_work_4f65/L087...
+2026-01-16 15:56:52,644 - INFO - [CHEMBL6038195] >>> Start Stage: Setup
+2026-01-16 15:56:52,651 - INFO - Writing UFF SDF for CHEMBL6038195: 44 atoms → temp_isolation_work_4f65/L087/uff/L087_uff.sdf
+2026-01-16 15:56:52,653 - INFO - [CHEMBL6038195] >>> Start Stage: Energy Prediction
+2026-01-16 15:56:57,869 - ERROR - CMD ERROR: python inference.py -test_csv temp_isolation_work_4f65/L087/L087_input.csv -work_path temp_isolation_work_4f65/L087 -ensemble checkpoints/v0.2_energy_model -gpus 1 -batch_size 1 -posfix *val_loss* -energy_output_folder temp_isolation_work_4f65/L087 -uff_as_ligand -debug -reload
+STDERR: ...File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:56:57,869 - ERROR - [CHEMBL6038195] FAILED at stage Energy Prediction: Exit code 1 | File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:56:57,883 - INFO - [CHEMBL5787899] Processing in temp_isolation_work_4f65/L088...
+2026-01-16 15:56:57,883 - INFO - [CHEMBL5787899] >>> Start Stage: Setup
+2026-01-16 15:56:57,890 - INFO - Writing UFF SDF for CHEMBL5787899: 42 atoms → temp_isolation_work_4f65/L088/uff/L088_uff.sdf
+2026-01-16 15:56:57,893 - INFO - [CHEMBL5787899] >>> Start Stage: Energy Prediction
+2026-01-16 15:57:03,155 - ERROR - CMD ERROR: python inference.py -test_csv temp_isolation_work_4f65/L088/L088_input.csv -work_path temp_isolation_work_4f65/L088 -ensemble checkpoints/v0.2_energy_model -gpus 1 -batch_size 1 -posfix *val_loss* -energy_output_folder temp_isolation_work_4f65/L088 -uff_as_ligand -debug -reload
+STDERR: ...File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:57:03,155 - ERROR - [CHEMBL5787899] FAILED at stage Energy Prediction: Exit code 1 | File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:57:03,170 - INFO - [CHEMBL5828459] Processing in temp_isolation_work_4f65/L089...
+2026-01-16 15:57:03,170 - INFO - [CHEMBL5828459] >>> Start Stage: Setup
+2026-01-16 15:57:03,178 - INFO - Writing UFF SDF for CHEMBL5828459: 43 atoms → temp_isolation_work_4f65/L089/uff/L089_uff.sdf
+2026-01-16 15:57:03,180 - INFO - [CHEMBL5828459] >>> Start Stage: Energy Prediction
+2026-01-16 15:57:08,277 - ERROR - CMD ERROR: python inference.py -test_csv temp_isolation_work_4f65/L089/L089_input.csv -work_path temp_isolation_work_4f65/L089 -ensemble checkpoints/v0.2_energy_model -gpus 1 -batch_size 1 -posfix *val_loss* -energy_output_folder temp_isolation_work_4f65/L089 -uff_as_ligand -debug -reload
+STDERR: ...File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:57:08,278 - ERROR - [CHEMBL5828459] FAILED at stage Energy Prediction: Exit code 1 | File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:57:08,291 - INFO - [CHEMBL5876825] Processing in temp_isolation_work_4f65/L090...
+2026-01-16 15:57:08,292 - INFO - [CHEMBL5876825] >>> Start Stage: Setup
+2026-01-16 15:57:08,299 - INFO - Writing UFF SDF for CHEMBL5876825: 39 atoms → temp_isolation_work_4f65/L090/uff/L090_uff.sdf
+2026-01-16 15:57:08,303 - INFO - [CHEMBL5876825] >>> Start Stage: Energy Prediction
+2026-01-16 15:57:13,497 - ERROR - CMD ERROR: python inference.py -test_csv temp_isolation_work_4f65/L090/L090_input.csv -work_path temp_isolation_work_4f65/L090 -ensemble checkpoints/v0.2_energy_model -gpus 1 -batch_size 1 -posfix *val_loss* -energy_output_folder temp_isolation_work_4f65/L090 -uff_as_ligand -debug -reload
+STDERR: ...File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:57:13,497 - ERROR - [CHEMBL5876825] FAILED at stage Energy Prediction: Exit code 1 | File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:57:13,515 - INFO - [CHEMBL5760294] Processing in temp_isolation_work_4f65/L091...
+2026-01-16 15:57:13,515 - INFO - [CHEMBL5760294] >>> Start Stage: Setup
+2026-01-16 15:57:13,524 - INFO - Writing UFF SDF for CHEMBL5760294: 39 atoms → temp_isolation_work_4f65/L091/uff/L091_uff.sdf
+2026-01-16 15:57:13,526 - INFO - [CHEMBL5760294] >>> Start Stage: Energy Prediction
+2026-01-16 15:57:18,721 - ERROR - CMD ERROR: python inference.py -test_csv temp_isolation_work_4f65/L091/L091_input.csv -work_path temp_isolation_work_4f65/L091 -ensemble checkpoints/v0.2_energy_model -gpus 1 -batch_size 1 -posfix *val_loss* -energy_output_folder temp_isolation_work_4f65/L091 -uff_as_ligand -debug -reload
+STDERR: ...File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:57:18,721 - ERROR - [CHEMBL5760294] FAILED at stage Energy Prediction: Exit code 1 | File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:57:18,734 - INFO - [CHEMBL6058913] Processing in temp_isolation_work_4f65/L092...
+2026-01-16 15:57:18,734 - INFO - [CHEMBL6058913] >>> Start Stage: Setup
+2026-01-16 15:57:18,741 - INFO - Writing UFF SDF for CHEMBL6058913: 42 atoms → temp_isolation_work_4f65/L092/uff/L092_uff.sdf
+2026-01-16 15:57:18,744 - INFO - [CHEMBL6058913] >>> Start Stage: Energy Prediction
+2026-01-16 15:57:23,862 - ERROR - CMD ERROR: python inference.py -test_csv temp_isolation_work_4f65/L092/L092_input.csv -work_path temp_isolation_work_4f65/L092 -ensemble checkpoints/v0.2_energy_model -gpus 1 -batch_size 1 -posfix *val_loss* -energy_output_folder temp_isolation_work_4f65/L092 -uff_as_ligand -debug -reload
+STDERR: ...File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:57:23,862 - ERROR - [CHEMBL6058913] FAILED at stage Energy Prediction: Exit code 1 | File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:57:23,877 - INFO - [CHEMBL5917424] Processing in temp_isolation_work_4f65/L093...
+2026-01-16 15:57:23,878 - INFO - [CHEMBL5917424] >>> Start Stage: Setup
+2026-01-16 15:57:23,885 - INFO - Writing UFF SDF for CHEMBL5917424: 41 atoms → temp_isolation_work_4f65/L093/uff/L093_uff.sdf
+2026-01-16 15:57:23,888 - INFO - [CHEMBL5917424] >>> Start Stage: Energy Prediction
+2026-01-16 15:57:28,961 - ERROR - CMD ERROR: python inference.py -test_csv temp_isolation_work_4f65/L093/L093_input.csv -work_path temp_isolation_work_4f65/L093 -ensemble checkpoints/v0.2_energy_model -gpus 1 -batch_size 1 -posfix *val_loss* -energy_output_folder temp_isolation_work_4f65/L093 -uff_as_ligand -debug -reload
+STDERR: ...File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:57:28,961 - ERROR - [CHEMBL5917424] FAILED at stage Energy Prediction: Exit code 1 | File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:57:28,974 - INFO - [CHEMBL5952810] Processing in temp_isolation_work_4f65/L094...
+2026-01-16 15:57:28,974 - INFO - [CHEMBL5952810] >>> Start Stage: Setup
+2026-01-16 15:57:28,982 - INFO - Writing UFF SDF for CHEMBL5952810: 38 atoms → temp_isolation_work_4f65/L094/uff/L094_uff.sdf
+2026-01-16 15:57:28,985 - INFO - [CHEMBL5952810] >>> Start Stage: Energy Prediction
+2026-01-16 15:57:34,124 - ERROR - CMD ERROR: python inference.py -test_csv temp_isolation_work_4f65/L094/L094_input.csv -work_path temp_isolation_work_4f65/L094 -ensemble checkpoints/v0.2_energy_model -gpus 1 -batch_size 1 -posfix *val_loss* -energy_output_folder temp_isolation_work_4f65/L094 -uff_as_ligand -debug -reload
+STDERR: ...File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:57:34,124 - ERROR - [CHEMBL5952810] FAILED at stage Energy Prediction: Exit code 1 | File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:57:34,140 - INFO - [CHEMBL6020412] Processing in temp_isolation_work_4f65/L095...
+2026-01-16 15:57:34,140 - INFO - [CHEMBL6020412] >>> Start Stage: Setup
+2026-01-16 15:57:34,148 - INFO - Writing UFF SDF for CHEMBL6020412: 42 atoms → temp_isolation_work_4f65/L095/uff/L095_uff.sdf
+2026-01-16 15:57:34,151 - INFO - [CHEMBL6020412] >>> Start Stage: Energy Prediction
+2026-01-16 15:57:39,522 - ERROR - CMD ERROR: python inference.py -test_csv temp_isolation_work_4f65/L095/L095_input.csv -work_path temp_isolation_work_4f65/L095 -ensemble checkpoints/v0.2_energy_model -gpus 1 -batch_size 1 -posfix *val_loss* -energy_output_folder temp_isolation_work_4f65/L095 -uff_as_ligand -debug -reload
+STDERR: ...File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:57:39,522 - ERROR - [CHEMBL6020412] FAILED at stage Energy Prediction: Exit code 1 | File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:57:39,538 - INFO - [CHEMBL5918266] Processing in temp_isolation_work_4f65/L096...
+2026-01-16 15:57:39,538 - INFO - [CHEMBL5918266] >>> Start Stage: Setup
+2026-01-16 15:57:39,546 - INFO - Writing UFF SDF for CHEMBL5918266: 39 atoms → temp_isolation_work_4f65/L096/uff/L096_uff.sdf
+2026-01-16 15:57:39,549 - INFO - [CHEMBL5918266] >>> Start Stage: Energy Prediction
+2026-01-16 15:57:44,678 - ERROR - CMD ERROR: python inference.py -test_csv temp_isolation_work_4f65/L096/L096_input.csv -work_path temp_isolation_work_4f65/L096 -ensemble checkpoints/v0.2_energy_model -gpus 1 -batch_size 1 -posfix *val_loss* -energy_output_folder temp_isolation_work_4f65/L096 -uff_as_ligand -debug -reload
+STDERR: ...File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:57:44,678 - ERROR - [CHEMBL5918266] FAILED at stage Energy Prediction: Exit code 1 | File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:57:44,692 - INFO - [CHEMBL5830217] Processing in temp_isolation_work_4f65/L097...
+2026-01-16 15:57:44,692 - INFO - [CHEMBL5830217] >>> Start Stage: Setup
+2026-01-16 15:57:44,699 - INFO - Writing UFF SDF for CHEMBL5830217: 43 atoms → temp_isolation_work_4f65/L097/uff/L097_uff.sdf
+2026-01-16 15:57:44,703 - INFO - [CHEMBL5830217] >>> Start Stage: Energy Prediction
+2026-01-16 15:57:49,798 - ERROR - CMD ERROR: python inference.py -test_csv temp_isolation_work_4f65/L097/L097_input.csv -work_path temp_isolation_work_4f65/L097 -ensemble checkpoints/v0.2_energy_model -gpus 1 -batch_size 1 -posfix *val_loss* -energy_output_folder temp_isolation_work_4f65/L097 -uff_as_ligand -debug -reload
+STDERR: ...File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:57:49,798 - ERROR - [CHEMBL5830217] FAILED at stage Energy Prediction: Exit code 1 | File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:57:49,809 - INFO - [CHEMBL5854915] Processing in temp_isolation_work_4f65/L098...
+2026-01-16 15:57:49,809 - INFO - [CHEMBL5854915] >>> Start Stage: Setup
+2026-01-16 15:57:49,815 - INFO - Writing UFF SDF for CHEMBL5854915: 38 atoms → temp_isolation_work_4f65/L098/uff/L098_uff.sdf
+2026-01-16 15:57:49,818 - INFO - [CHEMBL5854915] >>> Start Stage: Energy Prediction
+2026-01-16 15:57:54,862 - ERROR - CMD ERROR: python inference.py -test_csv temp_isolation_work_4f65/L098/L098_input.csv -work_path temp_isolation_work_4f65/L098 -ensemble checkpoints/v0.2_energy_model -gpus 1 -batch_size 1 -posfix *val_loss* -energy_output_folder temp_isolation_work_4f65/L098 -uff_as_ligand -debug -reload
+STDERR: ...File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:57:54,862 - ERROR - [CHEMBL5854915] FAILED at stage Energy Prediction: Exit code 1 | File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:57:54,878 - INFO - [CHEMBL5891425] Processing in temp_isolation_work_4f65/L099...
+2026-01-16 15:57:54,878 - INFO - [CHEMBL5891425] >>> Start Stage: Setup
+2026-01-16 15:57:54,885 - INFO - Writing UFF SDF for CHEMBL5891425: 39 atoms → temp_isolation_work_4f65/L099/uff/L099_uff.sdf
+2026-01-16 15:57:54,888 - INFO - [CHEMBL5891425] >>> Start Stage: Energy Prediction
+2026-01-16 15:57:59,979 - ERROR - CMD ERROR: python inference.py -test_csv temp_isolation_work_4f65/L099/L099_input.csv -work_path temp_isolation_work_4f65/L099 -ensemble checkpoints/v0.2_energy_model -gpus 1 -batch_size 1 -posfix *val_loss* -energy_output_folder temp_isolation_work_4f65/L099 -uff_as_ligand -debug -reload
+STDERR: ...File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:57:59,979 - ERROR - [CHEMBL5891425] FAILED at stage Energy Prediction: Exit code 1 | File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:57:59,993 - INFO - [CHEMBL5964540] Processing in temp_isolation_work_4f65/L100...
+2026-01-16 15:57:59,993 - INFO - [CHEMBL5964540] >>> Start Stage: Setup
+2026-01-16 15:58:00,000 - INFO - Writing UFF SDF for CHEMBL5964540: 43 atoms → temp_isolation_work_4f65/L100/uff/L100_uff.sdf
+2026-01-16 15:58:00,003 - INFO - [CHEMBL5964540] >>> Start Stage: Energy Prediction
+2026-01-16 15:58:05,193 - ERROR - CMD ERROR: python inference.py -test_csv temp_isolation_work_4f65/L100/L100_input.csv -work_path temp_isolation_work_4f65/L100 -ensemble checkpoints/v0.2_energy_model -gpus 1 -batch_size 1 -posfix *val_loss* -energy_output_folder temp_isolation_work_4f65/L100 -uff_as_ligand -debug -reload
+STDERR: ...File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:58:05,194 - ERROR - [CHEMBL5964540] FAILED at stage Energy Prediction: Exit code 1 | File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:58:05,210 - INFO - [CHEMBL5811363] Processing in temp_isolation_work_4f65/L101...
+2026-01-16 15:58:05,210 - INFO - [CHEMBL5811363] >>> Start Stage: Setup
+2026-01-16 15:58:05,218 - INFO - Writing UFF SDF for CHEMBL5811363: 42 atoms → temp_isolation_work_4f65/L101/uff/L101_uff.sdf
+2026-01-16 15:58:05,220 - INFO - [CHEMBL5811363] >>> Start Stage: Energy Prediction
+2026-01-16 15:58:10,305 - ERROR - CMD ERROR: python inference.py -test_csv temp_isolation_work_4f65/L101/L101_input.csv -work_path temp_isolation_work_4f65/L101 -ensemble checkpoints/v0.2_energy_model -gpus 1 -batch_size 1 -posfix *val_loss* -energy_output_folder temp_isolation_work_4f65/L101 -uff_as_ligand -debug -reload
+STDERR: ...File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:58:10,305 - ERROR - [CHEMBL5811363] FAILED at stage Energy Prediction: Exit code 1 | File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:58:10,319 - INFO - [CHEMBL5907260] Processing in temp_isolation_work_4f65/L102...
+2026-01-16 15:58:10,319 - INFO - [CHEMBL5907260] >>> Start Stage: Setup
+2026-01-16 15:58:10,326 - INFO - Writing UFF SDF for CHEMBL5907260: 38 atoms → temp_isolation_work_4f65/L102/uff/L102_uff.sdf
+2026-01-16 15:58:10,328 - INFO - [CHEMBL5907260] >>> Start Stage: Energy Prediction
+2026-01-16 15:58:15,394 - ERROR - CMD ERROR: python inference.py -test_csv temp_isolation_work_4f65/L102/L102_input.csv -work_path temp_isolation_work_4f65/L102 -ensemble checkpoints/v0.2_energy_model -gpus 1 -batch_size 1 -posfix *val_loss* -energy_output_folder temp_isolation_work_4f65/L102 -uff_as_ligand -debug -reload
+STDERR: ...File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:58:15,394 - ERROR - [CHEMBL5907260] FAILED at stage Energy Prediction: Exit code 1 | File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:58:15,408 - INFO - [CHEMBL6017631] Processing in temp_isolation_work_4f65/L103...
+2026-01-16 15:58:15,408 - INFO - [CHEMBL6017631] >>> Start Stage: Setup
+2026-01-16 15:58:15,416 - INFO - Writing UFF SDF for CHEMBL6017631: 40 atoms → temp_isolation_work_4f65/L103/uff/L103_uff.sdf
+2026-01-16 15:58:15,418 - INFO - [CHEMBL6017631] >>> Start Stage: Energy Prediction
+2026-01-16 15:58:20,448 - ERROR - CMD ERROR: python inference.py -test_csv temp_isolation_work_4f65/L103/L103_input.csv -work_path temp_isolation_work_4f65/L103 -ensemble checkpoints/v0.2_energy_model -gpus 1 -batch_size 1 -posfix *val_loss* -energy_output_folder temp_isolation_work_4f65/L103 -uff_as_ligand -debug -reload
+STDERR: ...File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:58:20,448 - ERROR - [CHEMBL6017631] FAILED at stage Energy Prediction: Exit code 1 | File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:58:20,462 - INFO - [CHEMBL6060050] Processing in temp_isolation_work_4f65/L104...
+2026-01-16 15:58:20,462 - INFO - [CHEMBL6060050] >>> Start Stage: Setup
+2026-01-16 15:58:20,469 - INFO - Writing UFF SDF for CHEMBL6060050: 38 atoms → temp_isolation_work_4f65/L104/uff/L104_uff.sdf
+2026-01-16 15:58:20,472 - INFO - [CHEMBL6060050] >>> Start Stage: Energy Prediction
+2026-01-16 15:58:25,800 - ERROR - CMD ERROR: python inference.py -test_csv temp_isolation_work_4f65/L104/L104_input.csv -work_path temp_isolation_work_4f65/L104 -ensemble checkpoints/v0.2_energy_model -gpus 1 -batch_size 1 -posfix *val_loss* -energy_output_folder temp_isolation_work_4f65/L104 -uff_as_ligand -debug -reload
+STDERR: ...File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:58:25,800 - ERROR - [CHEMBL6060050] FAILED at stage Energy Prediction: Exit code 1 | File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:58:25,814 - INFO - [CHEMBL5912125] Processing in temp_isolation_work_4f65/L105...
+2026-01-16 15:58:25,814 - INFO - [CHEMBL5912125] >>> Start Stage: Setup
+2026-01-16 15:58:25,821 - INFO - Writing UFF SDF for CHEMBL5912125: 34 atoms → temp_isolation_work_4f65/L105/uff/L105_uff.sdf
+2026-01-16 15:58:25,823 - INFO - [CHEMBL5912125] >>> Start Stage: Energy Prediction
+2026-01-16 15:58:30,929 - ERROR - CMD ERROR: python inference.py -test_csv temp_isolation_work_4f65/L105/L105_input.csv -work_path temp_isolation_work_4f65/L105 -ensemble checkpoints/v0.2_energy_model -gpus 1 -batch_size 1 -posfix *val_loss* -energy_output_folder temp_isolation_work_4f65/L105 -uff_as_ligand -debug -reload
+STDERR: ...File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:58:30,930 - ERROR - [CHEMBL5912125] FAILED at stage Energy Prediction: Exit code 1 | File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:58:30,946 - INFO - [CHEMBL5999627] Processing in temp_isolation_work_4f65/L106...
+2026-01-16 15:58:30,946 - INFO - [CHEMBL5999627] >>> Start Stage: Setup
+2026-01-16 15:58:30,954 - INFO - Writing UFF SDF for CHEMBL5999627: 38 atoms → temp_isolation_work_4f65/L106/uff/L106_uff.sdf
+2026-01-16 15:58:30,957 - INFO - [CHEMBL5999627] >>> Start Stage: Energy Prediction
+2026-01-16 15:58:36,090 - ERROR - CMD ERROR: python inference.py -test_csv temp_isolation_work_4f65/L106/L106_input.csv -work_path temp_isolation_work_4f65/L106 -ensemble checkpoints/v0.2_energy_model -gpus 1 -batch_size 1 -posfix *val_loss* -energy_output_folder temp_isolation_work_4f65/L106 -uff_as_ligand -debug -reload
+STDERR: ...File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:58:36,090 - ERROR - [CHEMBL5999627] FAILED at stage Energy Prediction: Exit code 1 | File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:58:36,103 - INFO - [CHEMBL5786043] Processing in temp_isolation_work_4f65/L107...
+2026-01-16 15:58:36,103 - INFO - [CHEMBL5786043] >>> Start Stage: Setup
+2026-01-16 15:58:36,111 - INFO - Writing UFF SDF for CHEMBL5786043: 38 atoms → temp_isolation_work_4f65/L107/uff/L107_uff.sdf
+2026-01-16 15:58:36,113 - INFO - [CHEMBL5786043] >>> Start Stage: Energy Prediction
+2026-01-16 15:58:41,521 - ERROR - CMD ERROR: python inference.py -test_csv temp_isolation_work_4f65/L107/L107_input.csv -work_path temp_isolation_work_4f65/L107 -ensemble checkpoints/v0.2_energy_model -gpus 1 -batch_size 1 -posfix *val_loss* -energy_output_folder temp_isolation_work_4f65/L107 -uff_as_ligand -debug -reload
+STDERR: ...File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:58:41,522 - ERROR - [CHEMBL5786043] FAILED at stage Energy Prediction: Exit code 1 | File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:58:41,539 - INFO - [CHEMBL5757674] Processing in temp_isolation_work_4f65/L108...
+2026-01-16 15:58:41,539 - INFO - [CHEMBL5757674] >>> Start Stage: Setup
+2026-01-16 15:58:41,547 - INFO - Writing UFF SDF for CHEMBL5757674: 37 atoms → temp_isolation_work_4f65/L108/uff/L108_uff.sdf
+2026-01-16 15:58:41,550 - INFO - [CHEMBL5757674] >>> Start Stage: Energy Prediction
+2026-01-16 15:58:46,589 - ERROR - CMD ERROR: python inference.py -test_csv temp_isolation_work_4f65/L108/L108_input.csv -work_path temp_isolation_work_4f65/L108 -ensemble checkpoints/v0.2_energy_model -gpus 1 -batch_size 1 -posfix *val_loss* -energy_output_folder temp_isolation_work_4f65/L108 -uff_as_ligand -debug -reload
+STDERR: ...File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:58:46,590 - ERROR - [CHEMBL5757674] FAILED at stage Energy Prediction: Exit code 1 | File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:58:46,607 - INFO - [CHEMBL5740197] Processing in temp_isolation_work_4f65/L109...
+2026-01-16 15:58:46,607 - INFO - [CHEMBL5740197] >>> Start Stage: Setup
+2026-01-16 15:58:46,615 - INFO - Writing UFF SDF for CHEMBL5740197: 39 atoms → temp_isolation_work_4f65/L109/uff/L109_uff.sdf
+2026-01-16 15:58:46,618 - INFO - [CHEMBL5740197] >>> Start Stage: Energy Prediction
+2026-01-16 15:58:51,721 - ERROR - CMD ERROR: python inference.py -test_csv temp_isolation_work_4f65/L109/L109_input.csv -work_path temp_isolation_work_4f65/L109 -ensemble checkpoints/v0.2_energy_model -gpus 1 -batch_size 1 -posfix *val_loss* -energy_output_folder temp_isolation_work_4f65/L109 -uff_as_ligand -debug -reload
+STDERR: ...File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:58:51,722 - ERROR - [CHEMBL5740197] FAILED at stage Energy Prediction: Exit code 1 | File "/mnt/tank/scratch/ikarpushkina/Interformer_new/Interformer_bench/interformer/data/data_stucture/lmdb_dataset.py", line 98, in get_max_mean_min
+    return f":max={max(x)},mean={np.mean(x):4f},median={np.median(x):4f},std={np.std(x):4f},min={np.min(x)}"
+ValueError: max() arg is an empty sequence
+2026-01-16 15:58:51,738 - INFO - [CHEMBL5755881] Processing in temp_isolation_work_4f65/L110...
+2026-01-16 15:58:51,739 - INFO - [CHEMBL5755881] >>> Start Stage: Setup
+2026-01-16 15:58:51,746 - INFO - Writing UFF SDF for CHEMBL5755881: 42 atoms → temp_isolation_work_4f65/L110/uff/L110_uff.sdf
+2026-01-16 15:58:51,749 - INFO - [CHEMBL5755881] >>> Start Stage: Energy Prediction
