@@ -1,113 +1,117 @@
-# Подробности нашей работы с Interformer
+Here is the English translation for your GitHub repository. I have maintained the technical terminology and formatting used in the bioinformatics and molecular modeling community.
 
-Основной скрипт, который запускает работу пайплайна - **```pipeline.sh```**. Старались там тоже подробно комментировать каждый этап.
+---
 
-### 1. Как мы готовили белоки и лиганды
-Белок брали предварительно обработанный meeko (больше ничего с ним не делали).
-Референсный лиганд протонировали, как описано в оригинальном REDME:
+# Interformer Implementation Details
 
-``` obabel ${WORK_PATH}/raw/${PDB}_ligand.pdb -p 7.4 -O ${WORK_PATH}/ligand/${PDB}_docked.sdf ```
+The main script driving the pipeline is **```pipeline.sh```**. We have included detailed comments for each stage within that script.
 
-Для подготовки исследуемых лигандов нами был написан скрипт **```prepare_ligands.py```**. 
-**Основная задача скрипта** — чтение молекулярных структур из CSV-файла, их преобразование, фильтрация и сохранение в формате SDF.
+### 1. Protein and Ligand Preparation
+The protein was pre-processed using `meeko` (no further modifications were made).
+The reference ligand was protonated as described in the original README:
 
-#### Ключевые функции **```prepare_ligands.py```**:
+```bash
+obabel ${WORK_PATH}/raw/${PDB}_ligand.pdb -p 7.4 -O ${WORK_PATH}/ligand/${PDB}_docked.sdf
+```
 
-* **Фильтрация по молекулярной массе:** Проводится проверка молекулярной массы каждой молекулы. Молекулы с массой, превышающей заданный порог (по умолчанию 500 Да), отфильтровываются и не проходят дальнейшую обработку.
-*   К молекуле добавляются атомы водорода (`Chem.AddHs`).
-*   Генерируются 3D-координаты атомов с использованием алгоритма ETKDGv3 (`AllChem.EmbedMolecule`).
-*   Проводится оптимизация геометрии молекулы с помощью силового поля UFF (`AllChem.UFFOptimizeMolecule`) для минимизации ее энергии.
-*   Подготовленные 3D-структуры молекул сохраняются в выходной файл в формате SDF (Structure-Data File). 
-*   Каждой сохраненной молекуле присваивается имя, соответствующее номеру исходной строки в CSV-файле.
+For the preparation of the target ligands, we developed the **```prepare_ligands.py```** script. 
+**The primary objective of the script** is to read molecular structures from a CSV file, transform them, filter them, and save them in SDF format.
+
+#### Key Functions of **```prepare_ligands.py```**:
+
+* **Molecular Weight Filtering:** The molecular weight of each molecule is checked. Molecules exceeding a set threshold (default is 500 Da) are filtered out and excluded from further processing.
+* **Hydrogen Addition:** Hydrogen atoms are added to the molecule (`Chem.AddHs`).
+* **3D Coordinate Generation:** 3D coordinates are generated using the ETKDGv3 algorithm (`AllChem.EmbedMolecule`).
+* **Geometry Optimization:** Geometry optimization is performed using the UFF force field (`AllChem.UFFOptimizeMolecule`) to minimize the molecule's energy.
+* **SDF Export:** Prepared 3D structures are saved as SDF (Structure-Data File).
+* **Naming:** Each saved molecule is assigned a name corresponding to its original row number in the CSV file.
 
 
-### 2. Внутренняя обработка белков и лигандов Interformer
+### 2. Internal Interformer Protein and Ligand Processing
 
-#### Общая схема подготовки
+#### General Preparation Workflow
 
-#### Шаг 1: Подготовка Белка (Protein Preparation)
+#### Step 1: Protein Preparation
 
-Основная задача здесь — выделить из всей огромной структуры белка только ту его часть, которая взаимодействует с лигандом (карман связывания), и подготовить ее.
+The main task here is to isolate the part of the protein that interacts with the ligand (the binding pocket) from the overall structure and prepare it for analysis.
 
-#### 1.1. Добавление водородов и определение состояний протонирования
+#### 1.1. Hydrogen Addition and Protonation State Assignment
 
-*   **Что происходит:** На этом этапе к структуре белка добавляются атомы водорода, так как в большинстве PDB-файлов они отсутствуют. Также определяется, какие аминокислотные остатки (например, гистидин, аспартат, глутамат) должны быть протонированы (нести заряд) при физиологическом pH.
-*   **Инструмент:** В README упоминается программа **Reduce**. Это стандартный инструмент в биоинформатике для этой задачи.
+*   **Process:** Hydrogen atoms are added to the protein structure, as they are absent in most PDB files. Additionally, the script determines which amino acid residues (e.g., Histidine, Aspartate, Glutamate) should be protonated (carry a charge) at physiological pH.
+*   **Tool:** The README suggests using **Reduce**, a standard bioinformatics tool for this task.
     ```bash
-    # Команда из README
+    # Command from README
     reduce examples/raw/2qbr.pdb > examples/raw/pocket/2qbr_reduce.pdb
     ```
-*   **Результат:** Новый PDB-файл (`2qbr_reduce.pdb`), содержащий полную структуру белка с правильно расставленными атомами водорода.
+*   **Result:** A new PDB file (`2qbr_reduce.pdb`) containing the complete protein structure with correctly assigned hydrogen atoms.
 
-  У нас с некоторыми белками это не работало и мы заменили комнаду на obabel, который использовался при подготовке лиганда (см. 1п.)
- 
-#### 1.2. Выделение кармана связывания (Pocket Extraction)
+*Note: For some proteins, Reduce failed to process the structure. In those cases, we replaced the command with `obabel` (following the same logic used for ligand preparation in section 1).*
 
-Это ключевой этап, в котором используется скрипт **`extract_pocket_by_ligand.py`**.
+#### 1.2. Pocket Extraction
 
-*   **Что происходит:** Скрипт "вырезает" из полной структуры белка только те атомы и аминокислотные остатки, которые находятся в непосредственной близости от референсного лиганда.
-*   **Как это работает (механизм `extract_pocket_by_ligand.py`):**
-    1.  **Входные данные:** Скрипт принимает на вход:
-        *   Путь к PDB-файлу белка, обработанному на шаге 1.1 (`2qbr_reduce.pdb`).
-        *   Путь к SDF-файлу референсного лиганда (`2qbr_docked.sdf`).
-    2.  **Идентификация лиганда:** Скрипт загружает обе структуры с помощью библиотеки **RDKit**.
-    3.  **Выделение окружения:** Используя координаты атомов референсного лиганда, скрипт определяет все атомы белка, находящиеся в радиусе **10 Å** (ангстрем) от лиганда. Эта операция выполняется функцией `ExtractPocketAndLigand` из библиотеки `oddt`, которая является надстройкой над RDKit.
-    4.  **Удаление референсного лиганда (опционально):** Важный момент — скрипт может удалить исходный референсный лиганд из структуры белка (`rm_ccd=True`), чтобы в кармане не было "лишних" молекул перед докингом нового лиганда.
-    5.  **Сохранение кофакторов:** Скрипт спроектирован так, чтобы сохранить важные кофакторы (например, ионы металлов Zn, Mg), если они попадают в 10 Å радиус.
-*   **Результат:** Компактный PDB-файл (`2qbr_pocket.pdb`), содержащий только атомы кармана связывания. Это значительно ускоряет последующие вычисления, так как нейросети не нужно обрабатывать весь белок.
+This is a critical stage utilizing the **`extract_pocket_by_ligand.py`** script.
 
-Этот скрипт мы запускали, работал вроде бы без нареканий.
+*   **Process:** The script "clips" only the atoms and amino acid residues that are in close proximity to the reference ligand from the full protein structure.
+*   **Mechanism of `extract_pocket_by_ligand.py`:**
+    1.  **Input:** The script accepts:
+        *   The path to the processed protein PDB file from step 1.1 (`2qbr_reduce.pdb`).
+        *   The path to the reference ligand SDF file (`2qbr_docked.sdf`).
+    2.  **Ligand Identification:** The script loads both structures using the **RDKit** library.
+    3.  **Environment Extraction:** Using the reference ligand's atomic coordinates, the script identifies all protein atoms within a **10 Å** radius of the ligand. This operation is performed using the `ExtractPocketAndLigand` function from the `oddt` library (a toolkit built on RDKit).
+    4.  **Reference Ligand Removal (Optional):** Importantly, the script can remove the original reference ligand from the protein structure (`rm_ccd=True`) to ensure no "extra" molecules interfere with the docking of the new ligand.
+    5.  **Cofactor Preservation:** The script is designed to preserve critical cofactors (e.g., Zn, Mg metal ions) if they fall within the 10 Å radius.
+*   **Result:** A compact PDB file (`2qbr_pocket.pdb`) containing only the binding pocket atoms. This significantly accelerates subsequent computations as the neural network does not need to process the entire protein.
 
-#### Шаг 2: Подготовка Лиганда (Ligand Preparation)
+This script was executed and performed without issues.
 
-Здесь мы готовим молекулу, которую собираемся "докировать" (встраивать) в белковый карман.
+#### Step 2: Ligand Preparation
 
-##### 2.1. Протонирование лиганда
+In this stage, we prepare the molecule that we intend to "dock" into the protein pocket.
 
-*   **Что происходит:** Аналогично белку, для лиганда определяется его наиболее вероятное состояние протонирования при заданном pH (обычно 7.4). Это критически важно для правильного моделирования взаимодействий, особенно водородных связей.
-*   **Инструмент:** В README используется **OpenBabel (`obabel`)**.
+##### 2.1. Ligand Protonation
+
+*   **Process:** Similar to the protein, the most probable protonation state of the ligand at a given pH (usually 7.4) is determined. This is critical for correctly modeling interactions, specifically hydrogen bonds.
+*   **Tool:** The README utilizes **OpenBabel (`obabel`)**.
     ```bash
-    # Команда из README
+    # Command from README
     obabel examples/raw/2qbr_ligand.sdf -p 7.4 -O examples/ligand/2qbr_docked.sdf
     ```
-*   **Результат:** Новый SDF-файл (`2qbr_docked.sdf`) с лигандом, у которого добавлены водороды и выставлены правильные заряды.
+*   **Result:** A new SDF file (`2qbr_docked.sdf`) with added hydrogens and correct charges.
 
-#### 2.2. Генерация начальной 3D-конформации
+#### 2.2. Initial 3D Conformation Generation
 
-Это второй ключевой этап, где используется скрипт **`rdkit_ETKDG_3d_gen.py`**.
+The second key stage involves the **`rdkit_ETKDG_3d_gen.py`** script.
 
-*   **Как скрипт работает:**
-    1.  **Входные данные:** Скрипт берет SDF-файл лиганда, полученный на шаге 2.1.
-    2.  **Генерация множества конформаций:** С помощью алгоритма **ETKDGv3** в RDKit генерируется несколько (в коде `n_confs=30`) возможных 3D-структур молекулы. Этот алгоритм хорошо воссоздает правильную геометрию молекулы.
-    3.  **Минимизация энергии:** Каждая из сгенерированных конформаций оптимизируется с помощью силового поля **UFF (Universal Force Field)**. Этот процесс похож на "встряхивание" молекулы, чтобы ее атомы заняли наиболее стабильное, низкоэнергетическое положение.
-    4.  **Выбор лучшей конформации:** Из всех оптимизированных конформаций выбирается одна — та, у которой самая низкая энергия.
-*   **Результат:** Новый SDF-файл (`2qbr_uff.sdf`), содержащий единственную, энергетически выгодную 3D-структуру лиганда. Это и есть стартовая поза для докинга.
+*   **Mechanism:**
+    1.  **Input:** The script takes the SDF file from step 2.1.
+    2.  **Conformational Sampling:** Using RDKit's **ETKDGv3** algorithm, several possible 3D structures (defined as `n_confs=30` in the code) are generated. This algorithm is known for reconstructing accurate molecular geometries.
+    3.  **Energy Minimization:** Each generated conformation is optimized using the **UFF (Universal Force Field)**. This process "shakes" the molecule so that its atoms settle into the most stable, low-energy positions.
+    4.  **Selection:** The conformation with the lowest energy is selected from the optimized pool.
+*   **Result:** A new SDF file (`2qbr_uff.sdf`) containing a single, energetically favorable 3D structure, serving as the starting pose for docking.
 
-  На основе данного скрипта написан наш **```prepare_ligands.py```**, но с обработкой ошибок, выводом их и с фильтрацией по молекулярной массе.
+*Our **```prepare_ligands.py```** script is based on this logic but includes enhanced error handling, logging, and molecular weight filtering.*
 
-#### Шаг 3: Финальная структура папок и запуск докинга
+#### Step 3: Final Directory Structure and Docking Execution
 
-После выполнения всех шагов, у нас есть готовые файлы, которые Interformer ожидает найти в определенной структуре папок:
+Upon completion, the files are organized into the structure expected by Interformer:
 
-*   `examples/pocket/2qbr_pocket.pdb`: Вырезанный и обработанный **карман белка**.
-*   `examples/ligand/2qbr_docked.sdf`: Протонированный **референсный лиганд**. Он используется для определения центра докинга.
-*   `examples/uff/2qbr_uff.sdf`: Низкоэнергетическая **3D-структура лиганда**, которую мы будем докировать.
+*   `examples/pocket/2qbr_pocket.pdb`: Extracted and processed **protein pocket**.
+*   `examples/ligand/2qbr_docked.sdf`: Protonated **reference ligand** (used to define the docking center).
+*   `examples/uff/2qbr_uff.sdf`: Low-energy **3D structure of the target ligand** for docking.
 
-### 3. Установка
-Скрипт со свежей успешной установкой - installation.sh.
+### 3. Installation
+The script for a fresh, successful installation is located at `installation.sh`.
 
-### 4. Отладка ошибок
-Для большинства систем ошибок возникало немного, и мы вручную пару раз перезапускали одну и ту же симуляцию, удалив лиганд, на котором всё ломалось. Самые большие проблемы были при работе с 1tqn_ic40. Для него в итоговой версии написан отдельный bash-скрипт для запуска симуляции **```pipeline_mmff_uff.sh```** , для подготовки лигандов - **```prepare_ligands_mmff_uff.py```**. Изначально ошибку пытались исправить не меняя оригинальные скрипты Interformer, поэтому для некоторых лигандов из данной системы, при неудачной попытке оптимизации с помощью uff поля, применялось более универсальное mmff, а также были удалены все серосодержащие лиганды (их было немного), так как в логах ошибки явно указывали на некоторые из них. Проблемные молекулы сохранены в result/trouble_ligands_{pdb_id}.csv. В остальном скрипты идентичны тем, что использовались для всех остальных систем. 
+### 4. Error Debugging
+For most systems, few errors occurred, and we manually restarted simulations a couple of times after removing the specific ligand that caused the crash. The most significant issues were encountered with the `1tqn_ic40` system. For this system, the final version includes a dedicated bash script for simulation execution, **```pipeline_mmff_uff.sh```**, and a dedicated preparation script, **```prepare_ligands_mmff_uff.py```**. 
 
-Также нам пришлось добавить небольшую отладку в один их оригинальных скриптов. В скрипте ```docking/pdbqt_ligand/wrappers_for_third_party_tools/wrapper_rdkitmol
-/wrapper_rdkitmol.py``` изменена только одна функция — классовый метод `save_sdf_given_wrappers`. 
+Initially, we attempted to fix errors without modifying the original Interformer scripts. Therefore, for certain ligands in this system, if UFF optimization failed, the more universal **MMFF** force field was applied. Additionally, all sulfur-containing ligands were removed (there were few), as error logs specifically pointed to them. These "trouble molecules" are saved in `result/trouble_ligands_{pdb_id}.csv`. Otherwise, the scripts are identical to those used for other systems.
 
-Основное и единственное изменение заключается в добавлении логики, которая **перенаправляет сохранение файлов из временной директории `/tmp/` в другую, постоянную директорию.**
+We also added minor debugging logic to one of the original scripts. In ```docking/pdbqt_ligand/wrappers_for_third_party_tools/wrapper_rdkitmol/wrapper_rdkitmol.py```, we modified the `save_sdf_given_wrappers` class method.
 
-Давайте разберем, как это работает:
+The primary modification involves adding logic that **redirects file saving from the temporary `/tmp/` directory to a permanent directory.**
 
-**Оригинальная версия (что было):**
-
+**Original Version:**
 ```python
 # ...
 else:
@@ -116,12 +120,7 @@ else:
 # ...
 ```
 
-В исходном коде, если файл не дописывается (`append2sdf` равно `False`), он просто создается или перезаписывается по тому пути, который был передан в функцию (`abspath_sdf_to_save`).
-
----
-
-**Измененная версия (что стало):**
-
+**Modified Version:**
 ```python
 # ...
 else:
@@ -135,80 +134,66 @@ else:
 # ...
 ```
 
-Теперь, перед созданием файла, скрипт выполняет проверку:
-
-1.  **Условие:** `if abspath_sdf_to_save.startswith('/tmp/')`
-    *   Проверяется, начинается ли путь для сохранения файла с `/tmp/`. Эта директория в Linux-системах обычно используется для временных файлов, которые могут удаляться после перезагрузки.
-
-2.  **Действие (если условие истинно):**
-    *   Из исходного пути извлекается только имя файла (например, из `/tmp/output_pose.sdf` будет взято `output_pose.sdf`).
-    *   Задается новый, "жестко" прописанный в коде путь к директории: `/mnt/tank/scratch/ikarpushkina/Interformer/tmp_output`.
-    *   Формируется новый полный путь для сохранения, который теперь ведет в эту постоянную директорию (например, `/mnt/tank/scratch/ikarpushkina/Interformer/tmp_output/output_pose.sdf`).
-
-3.  **Результат:** Файл, который изначально должен был сохраниться во временной папке `/tmp`, будет принудительно сохранен в другом, постоянном месте. Если же исходный путь не начинается с `/tmp/`, функция работает как и раньше. 
-
-Такое изменение было нужно нам для отладки.
-
-
-# Новые изменения в работу основного пайплайна в сравнении с оригинальной задумкой:
-
-Мы реализовали подход, который залючается в многократном запуске с подменой контекста, что необходимо для устойчивой работы инструмента. 
-
-Это кардинально отличается от того, как авторы Interformer задумывали использование своего инструмента. Ниже подробное сравнение.
+The script now performs a check before creating the file:
+1.  **Condition:** `if abspath_sdf_to_save.startswith('/tmp/')` checks if the path starts with the Linux temporary directory.
+2.  **Action:** If true, it extracts the filename and redirects it to the permanent directory: `/mnt/tank/scratch/ikarpushkina/Interformer/tmp_output`.
+3.  **Result:** Files originally destined for `/tmp` (which are often deleted on reboot) are saved permanently for debugging purposes.
 
 ---
 
-### 1. Канонический подход
-*Описан в README и используется в файлах типа `inference.py` и `pipeline.sh`.*
+# Pipeline Modifications: Original Intent vs. Implemented Robust Pipeline
 
-**Суть:** **Пакетная обработка (Batch Processing).**
-Авторы предполагают, что вы готовите один большой CSV-файл со всеми лигандами и скармливаете его нейросети.
+We implemented an approach based on multiple restarts with "context spoofing," which is necessary for stable performance. This differs significantly from the original Interformer design.
 
-*   **Идентификация:** Система опирается на **PDB ID** (первые 4 символа имени файла или колонки Target).
-*   **Кэширование:** Чтобы ускорить работу, Interformer агрессивно кэширует предобработанные данные (графы, фичи) в папку `tmp_beta`. Кэш привязывается к имени файла и PDB ID.
-*   **Поток данных:**
-    1.  `inference.py` (Energy) читает весь CSV, считает энергии для всех строк, сохраняет результаты.
-    2.  `reconstruct_ligands.py` (C++) берет папку с энергиями и восстанавливает позы для всей пачки.
-    3.  `inference.py` (Affinity) оценивает всю пачку поз разом.
-*   **Минусы:**
-    *   **Хрупкость:** Если C++ код (докинг) упадет на одном сложном лиганде (segfault), весь процесс остановится.
-    *   **Конфликты файлов:** Скрипты часто перезаписывают файлы с одинаковыми именами (например, `pocket.pdb`), если не следить за структурой папок идеально.
-    *   **"Утечка данных" при циклах:** Если попытаться запустить этот процесс в цикле `for` для одного белка, кэш `tmp_beta` не обновляется, и для нового лиганда выдаются результаты старого (что мы и наблюдали).
+### 1. Canonical Approach (Original)
+*As described in the README and used in `inference.py` and `pipeline.sh`.*
+
+**Concept:** **Batch Processing.**
+The authors intend for the user to prepare one large CSV file containing all ligands and feed it to the neural network at once.
+
+*   **Identification:** The system relies on the **PDB ID** (the first 4 characters of the filename or "Target" column).
+*   **Caching:** To speed up performance, Interformer aggressively caches pre-processed data (graphs, features) in the `tmp_beta` folder. The cache is bound to the filename and PDB ID.
+*   **Data Flow:**
+    1.  `inference.py` (Energy) reads the entire CSV, calculates energies for all rows, and saves results.
+    2.  `reconstruct_ligands.py` (C++) takes the energy folder and reconstructs poses for the entire batch.
+    3.  `inference.py` (Affinity) evaluates the entire batch of poses simultaneously.
+*   **Cons:**
+    *   **Fragility:** If the C++ docking code crashes on one complex ligand (e.g., segfault), the entire batch process stops.
+    *   **File Conflicts:** Scripts frequently overwrite files with identical names (e.g., `pocket.pdb`) unless the directory structure is managed perfectly.
+    *   **"Data Leakage" in loops:** If one attempts to run this process in a `for` loop for a single protein, the `tmp_beta` cache does not refresh, causing the network to return results from the previous ligand for the new one (a behavior we observed).
 
 ---
 
-### 2. Наш подход (Implemented Robust Pipeline)
-*Реализован в финальном `master_pipeline_log.py`.*
+### 2. Implemented Robust Pipeline (Our Approach)
+*Implemented in the final `master_pipeline_log.py`.*
 
-**Суть:** **Итеративная изоляция (Iterative Isolation).**
-Мы обманываем Interformer, заставляя его думать, что каждый лиганд — это **совершенно новый, уникальный проект с новым белком**, который он видит впервые.
+**Concept:** **Iterative Isolation.**
+We bypass the caching issue by making Interformer "think" that every ligand is a **completely new, unique project with a new protein** it has never seen before.
 
-#### Ключевые отличия:
+#### Comparison Table:
 
-| Характеристика | Канонический Interformer | Наш подход (Master Pipeline) |
+| Feature | Canonical Interformer | Robust Master Pipeline (Ours) |
 | :--- | :--- | :--- |
-| **Режим запуска** | Один запуск на ~1000 лигандов (Batch). | ~1000 запусков по 1 лиганду (Loop). |
-| **Идентификация** | Использует реальный PDB ID (например, `1tqn`). | **Генерирует фейковый ID** (`L001`, `L002`...) для каждого лиганда. |
-| **Кэширование** | Активно использует `tmp_beta` для ускорения. | **Жестко удаляет** `tmp_beta` перед каждым шагом + фейковый ID гарантирует уникальность кэша. |
-| **Файловая система** | Все результаты валятся в одну кучу (`energy_output`). | Каждый лиганд работает в **изолированной песочнице** (`temp_isolation_work/L001`), которая удаляется после успеха. |
-| **Устойчивость** | Ошибка на одном лиганде крашит всё. | Ошибка ловится (`try-except`), записывается в отчет, скрипт переходит к следующему. |
-| **Время выполнения** | Быстрее (меньше накладных расходов на запуск Python). | Чуть медленнее (перезапуск среды для каждого лиганда), но **гарантирует результат**. |
+| **Execution Mode** | One run for ~1000 ligands (Batch). | ~1000 runs of 1 ligand each (Loop). |
+| **Identification** | Uses the real PDB ID (e.g., `1tqn`). | **Generates a "Fake" ID** (`L001`, `L002`...) for each ligand. |
+| **Caching** | Relies on `tmp_beta` for speed. | **Forced deletion** of `tmp_beta` before each step + Fake ID ensures cache uniqueness. |
+| **File System** | All results saved in one folder (`energy_output`). | Each ligand works in an **isolated sandbox** (`temp_isolation_work/L001`), deleted after success. |
+| **Robustness** | Single ligand error crashes the entire process. | Errors are caught via `try-except`, logged, and the script moves to the next ligand. |
+| **Runtime** | Faster (lower Python startup overhead). | Slightly slower (restarting environment per ligand) but **guarantees results**. |
 
-#### Как это работает пошагово (в нашем скрипте):
+#### Step-by-Step Logic:
 
-1.  **Подготовка:** Мы берем реальный белок `1tqn` и сохраняем его копию.
-2.  **Цикл по лигандам:** Берем очередной лиганд.
-3.  **Подмена личности (Spoofing):**
-    *   Присваиваем ему ID `L001`.
-    *   Создаем папку `temp/L001`.
-    *   Копируем туда белок, но переименовываем его в `L001_pocket.pdb`.
-    *   Копируем лиганд как `L001_uff.sdf`.
-4.  **Запуск:** Запускаем Interformer. Он видит "белок L001", не находит его в кэше (так как такого белка не существует) и честно проводит все вычисления с нуля.
-5.  **Сбор урожая:** Забираем результаты из папки `L001`, меняем в CSV имя обратно на `1tqn` и сохраняем в чистовик.
-6.  **Зачистка:** Удаляем папку `L001` и кэш, чтобы следующий лиганд (`L002`) начал с чистого листа.
+1.  **Preparation:** We take the real protein (e.g., `1tqn`) and save a copy.
+2.  **Ligand Loop:** Iterate through ligands one by one.
+3.  **ID Spoofing:**
+    *   Assign an ID like `L001`.
+    *   Create a temporary folder `temp/L001`.
+    *   Copy the protein but rename it to `L001_pocket.pdb`.
+    *   Copy the ligand as `L001_uff.sdf`.
+4.  **Execution:** Run Interformer. It sees "Protein L001," fails to find it in the cache, and performs all calculations from scratch.
+5.  **Harvesting:** Collect results from the `L001` folder, map the ID back to the real name (e.g., `1tqn`), and save to the final output.
+6.  **Cleanup:** Delete the `L001` folder and the cache so the next ligand (`L002`) starts with a clean slate.
 
-### Почему мы к этому пришли?
+### Conclusion
 
-Мы столкнулись с архитектурной особенностью Interformer: он **полагается на кэширование и имена файлов**. При попытке сделать "устойчивый цикл" стандартными средствами, нейросеть просто отдавала нам старые результаты (Data Leakage), потому что видела знакомое имя файла (`1tqn_...csv`).
-
-Подход с **фейковыми ID (`L001`)** — это способ гарантированно обойти внутренние механизмы кэширования Interformer без переписывания его исходного кода. Это делает процесс немного "тяжелее", но зато надежным и воспроизводимым.
+We adopted this strategy to overcome an architectural limitation of Interformer: its **heavy reliance on caching and specific filenames**. By using **Fake IDs (`L001`)**, we guaranteed an bypass of the internal caching mechanisms without needing to rewrite the core source code. This makes the process more resource-intensive per run but ensures it is highly reliable and reproducible.
